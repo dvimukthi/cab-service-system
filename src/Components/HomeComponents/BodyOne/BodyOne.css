@@ -1,0 +1,58 @@
+.bodyone__container {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 38rem;
+    align-items: center;
+}
+
+.bodyone__part1 {
+    height: 35rem;
+    width: 48%;
+    background-color: cadetblue;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.bodyone__part2 {
+    height: 35rem;
+    width: 48%;
+    background-color: cadetblue; 
+    border-radius: 15px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.RIDEIMG {
+    
+        width: 90px;
+        height: 40px;
+        background-color: orange;
+}
+
+.bodyone__part2 h2 {
+    text-align: center;
+}
+
+.bodyone__part2 p {
+    text-align: center;
+}
+
+.NeedRide__btn {
+    margin-left: 20rem;
+    margin-right: 18rem;
+    width: max-content;
+    color: white;
+    background: orange;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid rgb(178, 128, 0);
+}
+.NeedRide__btn:hover {
+    background: orange;
+    color: black;
+    border: 1px solid black;
+}
