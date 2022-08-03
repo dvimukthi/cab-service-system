@@ -7,7 +7,17 @@ function BodyOne() {
     <div className="bodyone__container">
       <div className="bodyone__part1"></div>
       <div className="bodyone__part2">
-        <img src={RIDEIMG} alt="" width="370" height="280" />
+        <img
+          src={RIDEIMG}
+          alt=""
+          width="490"
+          height="320"
+          style={{
+            alignSelf: "center",
+            marginTop: "17px",
+            borderRadius: "10px",
+          }}
+        />
         <h2>Need a Ride</h2>
         <p>
           You can trust on us to give you a safe and comfortable ride no matter
