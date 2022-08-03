@@ -1,0 +1,25 @@
+.container{
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo__img {  
+}
+
+.text__container{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: ;
+    font-family:'Poppins', sans-serif;
+}
+
+.nav__text1{
+}
+
+.nav__text2 {
+    margin-left: 50px;
+}
