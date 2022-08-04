@@ -1,0 +1,19 @@
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f6f6f6;
+}
+
+.header__text {
+    text-align: center; 
+}
+
+.header__text h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: #FC0 1px 0 10px;
+    font-size: 65px;
+    color: black;
+}
+
+.header__video {}
