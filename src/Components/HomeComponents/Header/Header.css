@@ -10,10 +10,27 @@
 }
 
 .header__text h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
+    
+    font-family: 'Kaushan Script', cursive;
     text-shadow: #FC0 1px 0 10px;
-    font-size: 65px;
-    color: black;
+    font-size: 64px;
+    color: #FF8C00;
+}
+
+.header__text h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #794026;
+}
+
+.header__text h3 {
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #A0522D;
 }
 
 .header__video {}

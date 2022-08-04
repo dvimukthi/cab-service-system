@@ -6,8 +6,15 @@ function Header() {
   return (
     <div className="header__container">
       <div className="header__text">
-        <h1>Book the best taxi that you are looking for</h1>
-        <h2>"Gocheetah" offer the lowest rates in Sri Lanka.</h2>
+        <h1>
+          Book the best taxi
+          <br /> that you are <br /> looking for
+        </h1>
+        <h2>"GoCheetah" offer the lowest rates in Sri Lanka.</h2>
+        <h3>
+          We always provide reliable, trustworthy service covering the entire
+          island.
+        </h3>
       </div>
       <div className="header__video">
         <video
