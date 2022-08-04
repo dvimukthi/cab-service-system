@@ -18,7 +18,7 @@
 .bodyone__part2 {
     height: 35rem;
     width: 48%;
-    background: #EEE8AA; 
+    background: #d9ffe6;
     border-radius: 15px;
     margin-right: 20px;
     display: flex;
@@ -54,6 +54,7 @@
     cursor: pointer;
     border: 1px solid rgb(178, 128, 0);
 }
+
 .NeedRide__btn:hover {
     background: orange;
     color: black;
