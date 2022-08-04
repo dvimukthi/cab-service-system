@@ -1,5 +1,6 @@
 import React from "react";
-import BodyOne from "./HomeComponents/BodyOne/BodyOne";
+import BodyPartOne from "./HomeComponents/BodyPartOne/BodyPartOne";
+import BodyPartTwo from "./HomeComponents/BodyPartTwo/BodyPartTwo";
 import Header from "./HomeComponents/Header/Header";
 import Navbar from "./HomeComponents/Navbar/Navbar";
 
@@ -8,7 +9,8 @@ function Home() {
     <div>
       <Navbar />
       <Header />
-      <BodyOne />
+      <BodyPartOne />
+      <BodyPartTwo />
     </div>
   );
 }

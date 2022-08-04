@@ -1,8 +1,8 @@
 import React from "react";
-import "../BodyOne/BodyOne.css";
+import "../BodyPartOne/BodyPartOne.css";
 import RIDEIMG from "../../../Assets/need a ride.jpg";
 
-function BodyOne() {
+function BodyPartOne() {
   return (
     <div className="bodyone__container">
       <div className="bodyone__part1"></div>
@@ -30,4 +30,4 @@ function BodyOne() {
   );
 }
 
-export default BodyOne;
+export default BodyPartOne;

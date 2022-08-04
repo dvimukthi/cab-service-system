@@ -11,8 +11,8 @@
     width: 48%;
     background: cadetblue;
     border-radius: 15px;
-    border: 1px solid black;
     margin-left: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
 }
 
 .bodyone__part2 {
@@ -60,3 +60,4 @@
     color: black;
     border: 1px solid black;
 }
+
