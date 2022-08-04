@@ -4,9 +4,9 @@ import RIDEIMG from "../../../Assets/need a ride.jpg";
 
 function BodyPartOne() {
   return (
-    <div className="bodyone__container">
-      <div className="bodyone__part1"></div>
-      <div className="bodyone__part2">
+    <div className="bodypartone__container">
+      <div className="bodypartone__part1"></div>
+      <div className="bodypartone__part2">
         <img
           src={RIDEIMG}
           alt=""

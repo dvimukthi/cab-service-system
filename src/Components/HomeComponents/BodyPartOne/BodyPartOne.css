@@ -1,4 +1,4 @@
-.bodyone__container {
+.bodypartone__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.bodyone__part1 {
+.bodypartone__part1 {
     height: 35rem;
     width: 48%;
     background: cadetblue;
@@ -15,7 +15,7 @@
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
 }
 
-.bodyone__part2 {
+.bodypartone__part2 {
     height: 35rem;
     width: 48%;
     background: #d9ffe6;
@@ -26,7 +26,7 @@
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
 }
 
-.bodyone__part2 h2 {
+.bodypartone__part2 h2 {
     margin-top: 30px;
     margin-bottom: 5px;
     text-align: center;
@@ -34,7 +34,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.bodyone__part2 p {
+.bodypartone__part2 p {
     text-align: center;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;

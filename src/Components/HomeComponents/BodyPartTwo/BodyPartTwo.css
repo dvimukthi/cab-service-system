@@ -1,0 +1,25 @@
+.bodyparttwo__container {
+    background: green;
+}
+
+.bodyparttwo__container h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.bodyparttwoIcon__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: red;
+}
+
+.bodyparttwoIcon {
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: cadetblue;
+}
+
+.bodyparttwoIcon p {
+    text-align: center;
+}
