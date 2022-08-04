@@ -44,8 +44,7 @@
 
 .NeedRide__btn {
     margin-top: 10px;
-    margin-left: 20rem;
-    margin-right: 18rem;
+    align-self: center;
     width: max-content;
     color: white;
     background: orange;

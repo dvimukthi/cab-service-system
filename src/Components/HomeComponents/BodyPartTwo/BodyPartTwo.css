@@ -1,25 +1,30 @@
 .bodyparttwo__container {
-    background: green;
+    background: #F0E68C;
+    padding-top: 5px;
 }
 
 .bodyparttwo__container h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    color: #B8860B;
 }
 
 .bodyparttwoIcon__container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: red;
 }
 
 .bodyparttwoIcon {
     flex-direction: column;
-    margin-top: 20px;
-    background-color: cadetblue;
+    margin-top: 10px;
 }
 
 .bodyparttwoIcon p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
     text-align: center;
+    color: #800000;
 }

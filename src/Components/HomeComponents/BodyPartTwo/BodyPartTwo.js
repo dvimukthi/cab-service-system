@@ -35,7 +35,7 @@ function BodyPartTwo() {
             height="120"
             style={{
               marginTop: "7px",
-              marginLeft: "30px",
+              marginLeft: "40px",
               borderRadius: "50px",
               background: "orange",
             }}
@@ -50,7 +50,7 @@ function BodyPartTwo() {
             height="120"
             style={{
               marginTop: "7px",
-              marginLeft: "30px",
+              marginLeft: "25px",
               borderRadius: "50px",
               background: "orange",
             }}
@@ -65,7 +65,7 @@ function BodyPartTwo() {
             height="120"
             style={{
               marginTop: "7px",
-              marginLeft: "30px",
+              marginLeft: "15px",
               borderRadius: "50px",
               background: "orange",
             }}
@@ -80,7 +80,7 @@ function BodyPartTwo() {
             height="120"
             style={{
               marginTop: "7px",
-              marginLeft: "30px",
+              marginLeft: "15px",
               borderRadius: "50px",
               background: "orange",
             }}
@@ -95,7 +95,7 @@ function BodyPartTwo() {
             height="120"
             style={{
               marginTop: "7px",
-              marginLeft: "30px",
+              marginLeft: "35px",
               borderRadius: "50px",
               background: "orange",
             }}
