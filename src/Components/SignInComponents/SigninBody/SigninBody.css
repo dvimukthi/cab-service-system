@@ -1,0 +1,15 @@
+.signinbody__container {
+    background: green;
+}
+
+.signinbody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.signin__form {
+    background: red;
+    margin-right: 15px;
+}
+
