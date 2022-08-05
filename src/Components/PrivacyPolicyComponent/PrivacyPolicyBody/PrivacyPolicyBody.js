@@ -4,212 +4,372 @@ import "../PrivacyPolicyBody/PrivacyPolicyBody.css";
 function PrivacyPolicyBody() {
   return (
     <div className="PrivacyPolicytext__container">
-      <h1>Privacy Policy for GoCheeta</h1>
+      <h1>GoCheeta</h1>
+
+      <h1>USER PRIVACY STATEMENT</h1>
 
       <p>
-        At GoCheeta, accessible from www.gocheeta.com, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by GoCheeta
-        and how we use it.
+        GoCheeta(Lanka) Private Limited collects information about you when you
+        use our GoCheeta User App, websites, and other online products and
+        services (collectively, the “Services”) and through other interactions
+        and communications you have with us. This Privacy Statement applies to
+        information collected and used by GoCheeta.
       </p>
 
-      <p>
-        If you have additional questions or require more information about our
-        Privacy Policy, do not hesitate to contact us.
-      </p>
+      <h3>Scope and Application</h3>
 
       <p>
-        This Privacy Policy applies only to our online activities and is valid
-        for visitors to our website with regards to the information that they
-        shared and/or collect in GoCheeta. This policy is not applicable to any
-        information collected offline or via channels other than this website.
-        Our Privacy Policy was created with the help of the
+        This Privacy Statement (“Statement") applies to all persons who use the
+        GoCheeta User App or Services to request transportation, delivery, or
+        other on-demand services (“Users”). It does not apply to information we
+        collect from or about service providers who use the GoCheeta platform
+        under license (collectively “Mobility Service Providers”). If you
+        interact with the Services as both, User and a Mobility Service
+        Provider, the respective privacy statements will apply to your different
+        interactions.
       </p>
 
-      <h2>Consent</h2>
+      <h3>Collection of Information</h3>
 
+      <p>Information You Provide to Us</p>
       <p>
-        By using our website, you hereby consent to our Privacy Policy and agree
-        to its terms.
+        We collect information you provide directly to us, such as when you
+        create or modify your account, request on-demand services, contact
+        customer support, or otherwise communicate with us. This information may
+        include: name, email, phone number, postal address, profile picture,
+        payment method, orders requested (for delivery services), delivery
+        notes, and other information you choose to provide.
       </p>
-
-      <h2>Information we collect</h2>
-
+      <p>Information We Collect Through Your Use of Our Services.</p>
       <p>
-        The personal information that you are asked to provide, and the reasons
-        why you are asked to provide it, will be made clear to you at the point
-        we ask you to provide your personal information.
-      </p>
-      <p>
-        If you contact us directly, we may receive additional information about
-        you such as your name, email address, phone number, the contents of the
-        message and/or attachments you may send us, and any other information
-        you may choose to provide.
+        When you use our Services, we collect information about you in the
+        following general categories:
       </p>
       <p>
-        When you register for an Account, we may ask for your contact
-        information, including items such as name, company name, address, email
-        address, and telephone number.
+        Location Information: When you use the Services for transportation or
+        delivery, we collect precise location data about the trip from the
+        GoCheeta App used by the Mobility Service Provider. If you permit the
+        GoCheeta App to access location services through the permission system
+        used by your mobile operating system (“Platform”), we may also collect
+        the precise location of your device when the App is running in the
+        foreground or background. We may also derive your approximate location
+        from your IP address.
       </p>
-
-      <h2>How we use your information</h2>
-
-      <p>We use the information we collect in various ways, including to:</p>
-
-      <ul>
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>
-          Communicate with you, either directly or through one of our partners,
-          including for customer service, to provide you with updates and other
-          information relating to the website, and for marketing and promotional
-          purposes
-        </li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-
-      <h2>Log Files</h2>
-
       <p>
-        GoCheeta follows a standard procedure of using log files. These files
-        log visitors when they visit websites. All hosting companies do this and
-        a part of hosting services' analytics. The information collected by log
-        files include internet protocol (IP) addresses, browser type, Internet
-        Service Provider (ISP), date and time stamp, referring/exit pages, and
-        possibly the number of clicks. These are not linked to any information
-        that is personally identifiable. The purpose of the information is for
-        analyzing trends, administering the site, tracking users' movement on
-        the website, and gathering demographic information.
+        Contacts Information: If you permit the GoCheeta User App to access the
+        address book on your device through the permission system used by your
+        mobile platform, we may access and store names and contact information
+        from your address book to facilitate social interactions through our
+        Services and for other purposes described in this Statement or at the
+        time of consent or collection.
       </p>
-
-      <h2>Cookies and Web Beacons</h2>
-
       <p>
-        Like any other website, GoCheeta uses 'cookies'. These cookies are used
-        to store information including visitors' preferences, and the pages on
-        the website that the visitor accessed or visited. The information is
-        used to optimize the users' experience by customizing our web page
-        content based on visitors' browser type and/or other information.
+        Transaction Information: We collect transaction details related to your
+        use of our Services, including the type of service requested, date and
+        time the service was provided, amount charged, distance travelled, and
+        other related transaction details. Additionally, if someone uses your
+        promo code, we may associate your name with that person.
       </p>
-
-      <h2>Advertising Partners Privacy Policies</h2>
-
       <p>
-        You may consult this list to find the Privacy Policy for each of the
-        advertising partners of GoCheeta.{" "}
+        Usage and Preference Information: We collect information about how you
+        and site visitors interact with our Services, preferences expressed, and
+        settings chosen. In some cases we do this through the use of cookies,
+        pixel tags, and similar technologies that create and maintain unique
+        identifiers.
+      </p>
+      <p>
+        Device Information: We may collect information about your mobile device,
+        including, for example, the hardware model, operating system and
+        version, software and file names and versions, preferred language,
+        unique device identifier, advertising identifiers, serial number, device
+        motion information, and mobile network information.
+      </p>
+      <p>
+        Call and SMS Data: Our Services facilitate communications between Users
+        and Mobility Services Providers. In connection with facilitating this
+        service, we receive call data, including the date and time of the call
+        or SMS message, the parties’ phone numbers, and the content of the SMS
+        message.
+      </p>
+      <p>
+        Log Information: When you interact with the Services, we collect server
+        logs, which may include information like device IP address, access dates
+        and times, app features or pages viewed, app crashes and other system
+        activity, type of browser, and the third party site or service you were
+        using before interacting with our Services.
       </p>
 
-      <p>
-        Third-party ad servers or ad networks uses technologies like cookies,
-        JavaScript, or Web Beacons that are used in their respective
-        advertisements and links that appear on GoCheeta, which are sent
-        directly to users' browser. They automatically receive your IP address
-        when this occurs. These technologies are used to measure the
-        effectiveness of their advertising campaigns and/or to personalize the
-        advertising content that you see on websites that you visit.
-      </p>
+      <h3>Important Information About Platform Permissions</h3>
 
       <p>
-        Note that GoCheeta has no access to or control over these cookies that
-        are used by third-party advertisers.
+        Most mobile platforms (iOS, Android, etc.) have defined certain types of
+        device data that apps cannot access without your consent. And these
+        platforms have different permission systems for obtaining your consent.
+        The iOS platform will alert you the first time the GoCheeta app wants
+        permission to access certain types of data and will let you consent (or
+        not consent) to that request. Android devices will notify you of the
+        permissions that the GoCheeta app seeks before you first use the app,
+        and your use of the app constitutes your consent. Sometimes these
+        permissions require more explanation than the platforms themselves
+        provide, and the permissions we request will change over time.
       </p>
 
-      <h2>Third Party Privacy Policies</h2>
+      <h2>INFORMATION WE COLLECT FROM OTHER SOURCES</h2>
 
       <p>
-        GoCheeta's Privacy Policy does not apply to other advertisers or
-        websites. Thus, we are advising you to consult the respective Privacy
-        Policies of these third-party ad servers for more detailed information.
-        It may include their practices and instructions about how to opt-out of
-        certain options.{" "}
+        We may also receive information from other sources and combine that with
+        information we collect through our Services. For example:
+      </p>
+      <p>
+        If you choose to link, create, or log in to your GoCheeta account with a
+        payment provider (eg: Google Wallet) or social media service (e.g.,
+        Facebook), or if you engage with a separate app or website that uses our
+        API (or whose API we use), we may receive information about you or your
+        connections from that site or app.
+      </p>
+      <p>
+        If your employer uses one of our enterprise solutions, such as GoCheeta
+        services, we may receive information about you from your employer.
+      </p>
+      <p>
+        When you request on demand services, Mobility Service Providers on our
+        platform may provide us with a User rating after providing services to
+        you.
+      </p>
+      <p>
+        If you also interact with our Services in another capacity, for instance
+        as a Mobility Service Providers or user of other apps we provide, we may
+        combine or associate that information with information we have collected
+        from you in your capacity as a User or a Mobility Service Provider.
       </p>
 
+      <h2>USE OF INFORMATION</h2>
+
+      <p>We may use the information we collect about you to:</p>
       <p>
-        You can choose to disable cookies through your individual browser
-        options. To know more detailed information about cookie management with
-        specific web browsers, it can be found at the browsers' respective
-        websites.
+        Provide, maintain, and improve our Services, including, for example, to
+        facilitate payments, send receipts, provide products and services you
+        request (and send related information), develop new features, provide
+        customer support to Users and Mobility Service Providers, develop safety
+        features, authenticate users, and send product updates and
+        administrative messages;
+      </p>
+      <p>
+        Perform internal operations, including, for example, to prevent fraud
+        and abuse of our Services; to troubleshoot software bugs and operational
+        problems; to conduct data analysis, testing, and research; and to
+        monitor and analyse usage and activity trends;
+      </p>
+      <p>
+        Send or facilitate communications (i) between you and a Mobility Service
+        Provider, such as estimated times of arrival (ETAs), or (ii) between you
+        and a contact of yours at your direction in connection with your use of
+        certain features, such as referrals, invites, split fare requests, or
+        ETA sharing; Send you communications we think will be of interest to
+        you, including information about products, services, promotions, news,
+        and events of GoCheeta and other companies, where permissible and
+        according to local applicable laws; and to process contest, sweepstake,
+        or other promotion entries and fulfil any related awards;
+      </p>
+      <p>
+        Personalize and improve the Services, including to provide or recommend
+        features, content, social connections, referrals, and advertisements. We
+        may transfer the information described in this Statement to, and process
+        and store it in, Sri Lanka and other countries, some of which may have
+        less protective data protection laws than the region in which you
+        reside. Where this is the case, we will take reasonable measures to
+        protect your personal information in accordance with this Statement.
       </p>
 
-      <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+      <h2>SHARING OF INFORMATION</h2>
 
       <p>
-        Under the CCPA, among other rights, California consumers have the right
-        to:
-      </p>
-      <p>
-        Request that a business that collects a consumer's personal data
-        disclose the categories and specific pieces of personal data that a
-        business has collected about consumers.
-      </p>
-      <p>
-        Request that a business delete any personal data about the consumer that
-        a business has collected.
-      </p>
-      <p>
-        Request that a business that sells a consumer's personal data, not sell
-        the consumer's personal data.
-      </p>
-      <p>
-        If you make a request, we have one month to respond to you. If you would
-        like to exercise any of these rights, please contact us.
+        We may share the information we collect about you as described in this
+        Statement or as described at the time of collection or sharing,
+        including as follows:
       </p>
 
-      <h2>GDPR Data Protection Rights</h2>
+      <h2>THROUGH OUR SERVICES</h2>
 
+      <p>We may share your information:</p>
       <p>
-        We would like to make sure you are fully aware of all of your data
-        protection rights. Every user is entitled to the following:
+        With Mobility Service Providers to enable them to provide the Services
+        you request. For example, we share your name, photo (if you provide
+        one), average User rating given by Mobility Service Providers, and
+        pickup and/or drop-off locations with Mobility Service Providers;
       </p>
       <p>
-        The right to access – You have the right to request copies of your
-        personal data. We may charge you a small fee for this service.
-      </p>
-      <p>
-        The right to rectification – You have the right to request that we
-        correct any information you believe is inaccurate. You also have the
-        right to request that we complete the information you believe is
-        incomplete.
-      </p>
-      <p>
-        The right to erasure – You have the right to request that we erase your
-        personal data, under certain conditions.
-      </p>
-      <p>
-        The right to restrict processing – You have the right to request that we
-        restrict the processing of your personal data, under certain conditions.
-      </p>
-      <p>
-        The right to object to processing – You have the right to object to our
-        processing of your personal data, under certain conditions.
-      </p>
-      <p>
-        The right to data portability – You have the right to request that we
-        transfer the data that we have collected to another organization, or
-        directly to you, under certain conditions.
-      </p>
-      <p>
-        If you make a request, we have one month to respond to you. If you would
-        like to exercise any of these rights, please contact us.
+        With other riders if you use a ride-sharing service like Share ride; and
+        with other people, as directed by you, such as when you want to share
+        your estimated time of arrival or split a fare with a friend;
+        <p>
+          With third parties to provide you a service you requested through a
+          partnership or promotional offering made by a third party or us;
+        </p>
+        <p>
+          With the general public if you submit content in a public forum, such
+          as blog comments, social media posts, or other features of our
+          Services that are viewable by the general public;
+        </p>
+        <p>
+          With third parties with whom you choose to let us share information,
+          for example other apps or websites that integrate with our API or
+          Services, or those with an API or Service with which we integrate;
+        </p>
+        With your employer (or similar entity) and any necessary third parties
+        engaged by us or your employer (e.g., an expense management service
+        provider), if you participate in any of our enterprise solutions such as
+        GoCheeta Services.
       </p>
 
-      <h2>Children's Information</h2>
+      <h2>OTHER IMPORTANT SHARING</h2>
 
+      <p>We may share your information:</p>
       <p>
-        Another part of our priority is adding protection for children while
-        using the internet. We encourage parents and guardians to observe,
-        participate in, and/or monitor and guide their online activity.
+        With GoCheeta subsidiaries and affiliated entities that provide services
+        or conduct data processing on our behalf, or for data centralization and
+        / or logistics purposes;
+      </p>
+      <p>
+        With vendors, consultants, marketing partners, and other service
+        providers who need access to such information to carry out work on our
+        behalf;
+      </p>
+      <p>
+        In response to a request for information by a competent authority if we
+        believe disclosure is in accordance with, or is otherwise required by,
+        any applicable law, regulation, or legal process;
+      </p>
+      <p>
+        With law enforcement officials, government authorities, or other third
+        parties if we believe your actions are inconsistent with our User
+        agreements, Terms of Service, or policies, or to protect the rights,
+        property, or safety of GoCheeta or others;
+      </p>
+      <p>
+        In connection with, or during negotiations of, any merger, sale of
+        company assets, consolidation or restructuring, financing, or
+        acquisition of all or a portion of our business by or into another
+        company;
+      </p>
+      <p>If we otherwise notify you and your consent to the sharing</p>
+      <p>
+        In an aggregated and/or anonymized form which cannot reasonably be used
+        to identify you.
       </p>
 
+      <h2>SOCIAL SHARING FEATURES</h2>
+
       <p>
-        GoCheeta does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to contact us immediately and we will do our best efforts
-        to promptly remove such information from our records.
+        The Services may integrate with social sharing features and other
+        related tools which let you share actions you take on our Services with
+        other apps, sites, or media, and vice versa.
+      </p>
+      <p>
+        Your use of such features enables the sharing of information with your
+        friends or the public, depending on the settings you establish with the
+        social sharing service. Please refer to the privacy policies of those
+        social sharing services for more information about how they handle the
+        data you provide to or share through them.
+      </p>
+      <p>
+        We may allow others to provide audience measurement and analytics
+        services for us, to serve advertisements on our behalf across the
+        Internet, and to track and report on the performance of those
+        advertisements. These entities may use cookies, web beacons, SDKs, and
+        other technologies to identify your device when you visit our site and
+        use our Services, as well as when you visit other online sites and
+        services.
+      </p>
+
+      <h3>Account Information</h3>
+
+      <p>
+        You may correct your account information at any time by logging into
+        your online or in-app account. If you wish to cancel your account,
+        please email us at support@gocheeta.lk. Please note that in some cases
+        we may retain certain information about you as required by law, or for
+        legitimate business purposes to the extent permitted by law. For
+        instance, if you have a standing credit or debt on your account, or if
+        we believe you have committed fraud or violated our Terms, we may seek
+        to resolve the issue before deleting your information.
+      </p>
+
+      <h3>Access Rights</h3>
+
+      <p>
+        GoCheeta will comply with individual’s requests regarding access,
+        correction, and/or deletion of the personal data it stores in accordance
+        with applicable law.
+      </p>
+
+      <h3>Location Information</h3>
+
+      <p>
+        We request permission for our app’s collection of precise location from
+        your device per the permission system used by your mobile operating
+        system. If you initially permit the collection of this information, you
+        can later disable it by changing the location settings on your mobile
+        device. However, this will limit your ability to use certain features of
+        our Services.
+      </p>
+
+      <h2>CONTACT INFORMATION</h2>
+
+      <p>
+        We may also seek permission for our app’s collection and syncing of
+        contact information from your device per the permission system used by
+        your mobile operating system. If you initially permit the collection of
+        this information, iOS users can later disable it by changing the
+        contacts settings on your mobile device. The Android platform does not
+        provide such a setting.
+      </p>
+
+      <h3>Promotional Communications</h3>
+
+      <p>
+        You may opt out of receiving promotional messages from us by following
+        the instructions in those messages. If you opt out, we may still send
+        you non-promotional communications, such as those about your account,
+        about Services you have requested, or our ongoing business relations.
+      </p>
+
+      <h3>How we use cookies</h3>
+
+      <p>
+        A cookie is a small file which asks permission to be placed on your
+        computer's hard drive. Once you agree, the file is added and the cookie
+        helps analyse web traffic or lets you know when you visit a particular
+        site. Cookies allow web applications to respond to you as an individual.
+        The web application can tailor its operations to your needs, likes and
+        dislikes by gathering and remembering information about your
+        preferences. We use traffic log cookies to identify which pages are
+        being used. This helps us analyse data about webpage traffic and improve
+        our website in order to tailor it to customer needs. We only use this
+        information for statistical analysis purposes and then the data is
+        removed from the system.
+      </p>
+      <p>
+        Overall, cookies help us provide you with a better website, by enabling
+        us to monitor which pages you find useful and which you do not. A cookie
+        in no way gives us access to your computer or any information about you,
+        other than the data you choose to share with us. You can choose to
+        accept or decline cookies. Most web browsers automatically accept
+        cookies, but you can usually modify your browser setting to decline
+        cookies if you prefer. This may prevent you from taking full advantage
+        of the website.
+      </p>
+
+      <h3>Changes to the Statement</h3>
+
+      <p>
+        We may change this Statement from time to time. If we make significant
+        changes in the way we treat your personal information, or to the
+        Statement, we will provide you notice through the Services or by some
+        other means, such as email. Your continued use of the Services after
+        such notice constitutes your consent to the changes. We encourage you to
+        periodically review the Statement for the latest information on our
+        privacy practices.
       </p>
     </div>
   );
