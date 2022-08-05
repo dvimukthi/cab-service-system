@@ -1,5 +1,5 @@
 .footer__container {
-    background: grey;
+    background: rgb(248, 180, 78);
     height: 12rem;
     flex-direction: row;
 }
@@ -16,6 +16,7 @@
     padding-top: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .footer__socialmedia {
@@ -33,7 +34,7 @@
 
 .footer__copyright {
     height: 50px;
-    background: rgb(138, 93, 9);
+    background: rgb(190, 123, 0);
     flex-direction: column;
 }
 

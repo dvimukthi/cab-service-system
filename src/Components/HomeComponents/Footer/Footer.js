@@ -32,6 +32,7 @@ function Footer() {
             height="50"
             style={{
               marginRight: "4px",
+              cursor: "pointer",
             }}
           />
           <img
@@ -51,9 +52,18 @@ function Footer() {
             height="50"
             style={{
               marginRight: "4px",
+              cursor: "pointer",
             }}
           />
-          <img src={LINKEDINIMG} alt="" width="50" height="50" style={{}} />
+          <img
+            src={LINKEDINIMG}
+            alt=""
+            width="50"
+            height="50"
+            style={{
+              cursor: "pointer",
+            }}
+          />
         </div>
       </div>
       <div className="footer__copyright">
