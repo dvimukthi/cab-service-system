@@ -46,6 +46,16 @@
     transition: .2s ease;
 }
 
+.box h1 {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.box p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
 .box:hover figcaption {
     opacity: 1;
 }
