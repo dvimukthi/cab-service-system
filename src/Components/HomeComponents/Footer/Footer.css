@@ -1,3 +1,47 @@
 .footer__container {
     background: grey;
+    height: 12rem;
+    flex-direction: row;
+}
+
+.footeritems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footeritems p {
+    font-size: 20px;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.footer__socialmedia {
+    margin-right: 15px;
+}
+
+.footer__socialmedia h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 5px;
+}
+
+.footer__copyright {
+    height: 50px;
+    background: rgb(138, 93, 9);
+    flex-direction: column;
+}
+
+.footer__copyright p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
