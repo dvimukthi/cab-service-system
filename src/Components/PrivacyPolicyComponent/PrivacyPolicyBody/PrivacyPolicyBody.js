@@ -50,7 +50,7 @@ function PrivacyPolicyBody() {
         delivery, we collect precise location data about the trip from the
         GoCheeta App used by the Mobility Service Provider. If you permit the
         GoCheeta App to access location services through the permission system
-        used by your mobile operating system (“Platform”), we may also collect
+        used by your mobile operating system “Platform”, we may also collect
         the precise location of your device when the App is running in the
         foreground or background. We may also derive your approximate location
         from your IP address.
