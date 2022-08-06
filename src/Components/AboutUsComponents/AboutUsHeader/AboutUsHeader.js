@@ -1,6 +1,6 @@
 import React from "react";
-import "../AboutUsComponents/AboutUsHeader.css";
-import LOGO from "../../Assets/GoCheeta logo.png";
+import "../AboutUsHeader/AboutUsHeader.css";
+import LOGO from "../../../Assets/GoCheeta logo.png";
 
 function AboutUsHeader() {
   return (

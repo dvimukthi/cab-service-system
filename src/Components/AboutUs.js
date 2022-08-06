@@ -1,10 +1,12 @@
 import React from "react";
-import AboutUsHeader from "./AboutUsComponents/AboutUsHeader";
+import AboutUsBody from "./AboutUsComponents/AboutUsBody/AboutUsBody";
+import AboutUsHeader from "./AboutUsComponents/AboutUsHeader/AboutUsHeader";
 
 function AboutUs() {
   return (
     <div>
       <AboutUsHeader />
+      <AboutUsBody />
     </div>
   );
 }
