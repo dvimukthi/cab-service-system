@@ -1,5 +1,29 @@
 .PrivacyPolicytext__container {
-    text-align: left;
+    background: ;
     margin-left: 15px;
     margin-right: 10px;
+}
+
+.PrivacyPolicytext__container {
+}
+
+.PrivacyPolicytext__container h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 40px;
+}
+
+.PrivacyPolicytext__container h2 {
+    font-family: 'Merriweather', serif;
+    margin-top: 110px;
+}
+
+.PrivacyPolicytext__container h3 {
+    font-family: 'Merriweather', serif;
+    margin-top: 40px;
+}
+
+.PrivacyPolicytext__container p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 }
