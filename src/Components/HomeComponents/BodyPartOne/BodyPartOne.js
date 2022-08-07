@@ -6,7 +6,7 @@ import { useNavigate } from "react-router";
 
 function BodyPartOne() {
   const navigate = useNavigate();
-  const loadHome = () => {
+  const loadBooking = () => {
     navigate("/book");
   };
   return (
@@ -57,7 +57,7 @@ function BodyPartOne() {
           where you need to travel by simply booking a taxi online with
           "GoCheetah".
         </p>
-        <div className="NeedRide__btn" onClick={loadHome}>
+        <div className="NeedRide__btn" onClick={loadBooking}>
           Book Now
         </div>
       </div>

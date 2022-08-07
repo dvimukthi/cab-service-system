@@ -22,7 +22,7 @@ function Footer() {
         />
         <p>About Us</p>
         <p>Contact Us</p>
-        <p>Privacy & Tearms</p>
+        <p>Privacy & Terms</p>
         <div className="footer__socialmedia">
           <h3>Follow Us</h3>
           <img
