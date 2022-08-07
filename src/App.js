@@ -1,5 +1,6 @@
 import React from "react";
 import AboutUs from "./Components/AboutUs";
+import Booking from "./Components/Booking";
 import Home from "./Components/Home";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import SignIn from "./Components/SignIn";
@@ -9,7 +10,8 @@ function App() {
     //<Home />
     //<SignIn />
     //<PrivacyPolicy />
-    <AboutUs />
+    //<AboutUs />
+    <Booking />
   );
 }
 
