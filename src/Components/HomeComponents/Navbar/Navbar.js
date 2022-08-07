@@ -7,6 +7,7 @@ function Navbar() {
   const navigate = useNavigate();
   const loadSignIn = () => {
     navigate("/signin");
+    navigate("signup");
   };
 
   return (
@@ -26,7 +27,9 @@ function Navbar() {
         <div className="nav__text1" onClick={loadSignIn}>
           Sign in
         </div>
-        <div className="nav__text2">Sign up</div>
+        <div className="nav__text2" onClick={loadSignUp}>
+          Sign up
+        </div>
       </div>
     </div>
   );
