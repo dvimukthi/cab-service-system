@@ -1,1 +1,11 @@
 .bookingBody__container {}
+
+.Trip__container {
+    
+}
+
+.BookingField {
+    display: flex;
+    flex-direction: column;
+}
+
