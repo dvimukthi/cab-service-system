@@ -1,8 +1,14 @@
 import React from "react";
 import "../Navbar/Navbar.css";
 import LOGO from "../../../Assets/GoCheeta logo.png";
+import { useNavigate } from "react-router";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const loadSignIn = () => {
+    navigate("/signin");
+  };
+
   return (
     <div className="container">
       <div className="logo__img">
@@ -17,7 +23,9 @@ function Navbar() {
         />
       </div>
       <div className="text__container">
-        <div className="nav__text1">Sign in</div>
+        <div className="nav__text1" onClick={loadSignIn}>
+          Sign in
+        </div>
         <div className="nav__text2">Sign up</div>
       </div>
     </div>

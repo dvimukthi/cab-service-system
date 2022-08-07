@@ -2,8 +2,13 @@ import React from "react";
 import "../BodyPartOne/BodyPartOne.css";
 import RIDEIMG from "../../../Assets/need a ride.jpg";
 import PROMOTIONIMG from "../../../Assets/GoCheeta poster.png";
+import { useNavigate } from "react-router";
 
 function BodyPartOne() {
+  const navigate = useNavigate();
+  const loadHome = () => {
+    navigate("/book");
+  };
   return (
     <div className="bodypartone__container">
       <div className="bodypartone__part1">
@@ -52,7 +57,9 @@ function BodyPartOne() {
           where you need to travel by simply booking a taxi online with
           "GoCheetah".
         </p>
-        <div className="NeedRide__btn">Book Now</div>
+        <div className="NeedRide__btn" onClick={loadHome}>
+          Book Now
+        </div>
       </div>
     </div>
   );

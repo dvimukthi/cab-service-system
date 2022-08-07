@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AboutUs from "./Components/AboutUs";
 import Booking from "./Components/Booking";
 import Home from "./Components/Home";
@@ -11,7 +12,13 @@ function App() {
     //<SignIn />
     //<PrivacyPolicy />
     //<AboutUs />
-    <Booking />
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/book" element={<Booking />} />
+        <Route path="/signin" element={<Booking />} />
+      </Routes>
+    </Router>
   );
 }
 
