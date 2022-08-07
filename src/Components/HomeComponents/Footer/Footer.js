@@ -5,8 +5,21 @@ import FCEBOOKIMG from "../../../Assets/facebook.png";
 import TWITTERIMG from "../../../Assets/twitter.png";
 import INSTAGRAMIMG from "../../../Assets/instagram.png";
 import LINKEDINIMG from "../../../Assets/linkedin.png";
+import { useNavigate } from "react-router";
 
 function Footer() {
+  const navigate = useNavigate();
+  const loadAboutUs = () => {
+    navigate("/About");
+  };
+  const loadContactUs = () => {
+    navigate("/Contact");
+  };
+
+  const LoadPrivacyPolicy = () => {
+    navigate("/Privacy");
+  };
+
   return (
     <div className="footer__container">
       <div className="footeritems">
@@ -20,9 +33,9 @@ function Footer() {
             marginLeft: "15px",
           }}
         />
-        <p>About Us</p>
-        <p>Contact Us</p>
-        <p>Privacy & Terms</p>
+        <p onClick={loadAboutUs}>About Us</p>
+        <p onClick={loadContactUs}>Contact Us</p>
+        <p onClick={LoadPrivacyPolicy}>Privacy & Terms</p>
         <div className="footer__socialmedia">
           <h3>Follow Us</h3>
           <img

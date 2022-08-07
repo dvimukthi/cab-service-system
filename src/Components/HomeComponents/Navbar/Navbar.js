@@ -5,8 +5,12 @@ import { useNavigate } from "react-router";
 
 function Navbar() {
   const navigate = useNavigate();
+
   const loadSignIn = () => {
     navigate("/signin");
+  };
+
+  const loadSignUp = () => {
     navigate("signup");
   };
 

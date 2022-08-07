@@ -2,22 +2,23 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AboutUs from "./Components/AboutUs";
 import Booking from "./Components/Booking";
+import ContactUs from "./Components/ContactUs";
 import Home from "./Components/Home";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import SignIn from "./Components/SignIn";
+import SignUp from "./Components/SignUp";
 
 function App() {
   return (
-    //<Home />
-    //<SignIn />
-    //<PrivacyPolicy />
-    //<AboutUs />
     <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/book" element={<Booking />} />
-        <Route path="/signin" element={<Booking />} />
-        <Route path="/signiup" element={<Booking />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/About" exact element={<AboutUs />} />
+        <Route path="/Contact" exact element={<ContactUs />} />
+        <Route path="/Privacy" exact element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );

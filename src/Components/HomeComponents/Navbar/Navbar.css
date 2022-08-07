@@ -14,9 +14,11 @@
 }
 
 .nav__text1{
+    cursor: pointer;
 }
 
 .nav__text2 {
     margin-left: 40px;
     margin-right: 15px;
+    cursor: pointer;
 }
