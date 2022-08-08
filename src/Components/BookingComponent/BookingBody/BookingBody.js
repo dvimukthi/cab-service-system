@@ -1,5 +1,6 @@
 import React from "react";
 import "../BookingBody/BookingBody.css";
+import DropdownBranches from "./DropdownBranches";
 
 function BookingBody() {
   return (
@@ -15,6 +16,7 @@ function BookingBody() {
               placeholder="Pickup Location"
             />
           </div>
+          <DropdownBranches />
           <div className="BookingField">
             <label>Drop Location</label>
             <input
