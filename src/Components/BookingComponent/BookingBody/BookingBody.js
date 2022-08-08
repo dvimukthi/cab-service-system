@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../BookingBody/BookingBody.css";
 import BookingVehicles from "./BookingVehicles";
 import DropdownBranches from "./DropdownBranches";
+import PlaceBooking from "./PlaceBooking";
 
 import BOOKINGPAGEIMG from "../../../Assets/BookingImg/bookingpage.png";
 
@@ -58,6 +59,7 @@ function BookingBody() {
           </div>
         </form>
         <BookingVehicles />
+        <PlaceBooking />
       </div>
       <img
         src={BOOKINGPAGEIMG}
