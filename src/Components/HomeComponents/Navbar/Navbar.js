@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   const loadSignUp = () => {
-    navigate("signup");
+    navigate("/signup");
   };
 
   return (
