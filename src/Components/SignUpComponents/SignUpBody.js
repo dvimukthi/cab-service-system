@@ -12,8 +12,14 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import { useNavigate } from "react-router";
 
 export default function SignUpBody() {
+  const navigate = useNavigate();
+  const loadSignIn = () => {
+    navigate("/signin");
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -49,18 +55,23 @@ export default function SignUpBody() {
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <Box
-            sx={{
+            style={{
               marginTop: 8,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+            <Avatar
+              style={{
+                margin: "1",
+                background: "orange",
+              }}
+            >
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign up
+              Sign Up
             </Typography>
             <Box
               component="form"
@@ -130,9 +141,18 @@ export default function SignUpBody() {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <Link href="#" variant="body2">
+                  <div
+                    onClick={loadSignIn}
+                    variant="body2"
+                    style={{
+                      cursor: "pointer",
+                      color: "black",
+                      marginTop: "5px",
+                      fontFamily: "'Roboto', sans-serif",
+                    }}
+                  >
                     Already have an account? Sign in
-                  </Link>
+                  </div>
                 </Grid>
               </Grid>
             </Box>

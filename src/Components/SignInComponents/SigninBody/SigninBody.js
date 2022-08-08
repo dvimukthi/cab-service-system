@@ -51,7 +51,18 @@ export default function SigninBody() {
             backgroundPosition: "center",
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid
+          item
+          xs={12}
+          sm={8}
+          md={5}
+          component={Paper}
+          elevation={6}
+          square
+          style={{
+            background: "rgb(220, 212, 180)",
+          }}
+        >
           <Box
             sx={{
               my: 8,
@@ -72,7 +83,7 @@ export default function SigninBody() {
             <Typography
               style={{
                 fontSize: "30px",
-                color: "orange",
+                color: "black",
               }}
             >
               Login
@@ -134,7 +145,7 @@ export default function SigninBody() {
                     style={{
                       cursor: "pointer",
                       color: "black",
-                      marginTop: "5px",
+                      marginTop: "10px",
                       fontFamily: "'Roboto', sans-serif",
                     }}
                   >
