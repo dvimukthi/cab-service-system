@@ -1,0 +1,26 @@
+.Bookingvehicles__container {
+    background: red;
+    display: flex;
+}
+
+.Vehicle__item {
+    background: green;
+    padding: 15px;
+    margin-left: 20px;
+    margin: 20px;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.Vehicle__item:hover {
+    background: black;
+}
+
+.Vehicles {
+}
+
+.Vehicle__Checkbox {
+    margin-left: 20px;
+}

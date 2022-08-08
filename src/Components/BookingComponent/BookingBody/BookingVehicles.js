@@ -10,40 +10,75 @@ const label = { inputProps: { "aria-label": "Checkbox bookingVehicles" } };
 
 function BookingVehicles() {
   return (
-    <div>
-      <img src={BUDGETIMG} alt="" width="60" height="60" style={{}} />
-
-      <Checkbox
-        {...label}
-        sx={{
-          color: orange[800],
-          "&.Mui-checked": {
-            color: orange[600],
-          },
-        }}
-      />
-
-      <img src={CARIMG} alt="" width="60" height="60" style={{}} />
-      <Checkbox
-        {...label}
-        sx={{
-          color: orange[800],
-          "&.Mui-checked": {
-            color: orange[600],
-          },
-        }}
-      />
-
-      <img src={VANIMG} alt="" width="60" height="60" style={{}} />
-      <Checkbox
-        {...label}
-        sx={{
-          color: orange[800],
-          "&.Mui-checked": {
-            color: orange[600],
-          },
-        }}
-      />
+    <div className="Bookingvehicles__container">
+      <div className="Vehicle__item">
+        <div className="Vehicles">
+          <img
+            src={BUDGETIMG}
+            alt=""
+            width="80"
+            height="80"
+            style={{
+              background: "orange",
+            }}
+          />
+        </div>
+        <div className="Vehicle__Checkbox">
+          <Checkbox
+            {...label}
+            sx={{
+              color: orange[800],
+              "&.Mui-checked": {
+                color: orange[600],
+              },
+            }}
+          />
+        </div>
+      </div>
+      <div className="Vehicle__item">
+        <div className="Vehicles">
+          <img
+            src={CARIMG}
+            alt=""
+            width="80"
+            height="80"
+            style={{ background: "orange" }}
+          />
+        </div>
+        <div className="Vehicle__Checkbox">
+          <Checkbox
+            {...label}
+            sx={{
+              color: orange[800],
+              "&.Mui-checked": {
+                color: orange[600],
+              },
+            }}
+          />
+        </div>
+      </div>
+      <div className="Vehicle__item">
+        <div className="Vehicles">
+          <img
+            src={VANIMG}
+            alt=""
+            width="80"
+            height="80"
+            style={{ background: "orange" }}
+          />
+        </div>
+        <div className="Vehicle__Checkbox">
+          <Checkbox
+            {...label}
+            sx={{
+              color: orange[800],
+              "&.Mui-checked": {
+                color: orange[600],
+              },
+            }}
+          />
+        </div>
+      </div>
     </div>
   );
 }
