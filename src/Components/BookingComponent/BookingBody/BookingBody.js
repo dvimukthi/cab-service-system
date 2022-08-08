@@ -14,6 +14,11 @@ function BookingBody() {
               type="text"
               name="PickupLocation"
               placeholder="Pickup Location"
+              style={{
+                marginTop: "10px",
+                marginRight: "85%",
+                height: "25px",
+              }}
             />
           </div>
           <DropdownBranches />
@@ -23,8 +28,22 @@ function BookingBody() {
               type="text"
               name="StreetAddress"
               placeholder="Street Address"
+              style={{
+                marginTop: "10px",
+                marginRight: "85%",
+                height: "25px",
+              }}
             />
-            <input type="text" name="city" placeholder="City" />
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              style={{
+                marginTop: "10px",
+                marginRight: "85%",
+                height: "25px",
+              }}
+            />
           </div>
         </div>
       </form>
