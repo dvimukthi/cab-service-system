@@ -22,8 +22,8 @@ function BookingBody() {
                 placeholder="Pickup Location"
                 style={{
                   marginTop: "10px",
-                  marginRight: "85%",
-                  height: "25px",
+                  marginRight: "38%",
+                  height: "28px",
                   borderRadius: "4px",
                 }}
               />
@@ -38,8 +38,8 @@ function BookingBody() {
                 placeholder="Street Address"
                 style={{
                   marginTop: "10px",
-                  marginRight: "85%",
-                  height: "25px",
+                  marginRight: "38%",
+                  height: "28px",
                   borderRadius: "4px",
                 }}
               />
@@ -49,8 +49,8 @@ function BookingBody() {
                 placeholder="City"
                 style={{
                   marginTop: "10px",
-                  marginRight: "85%",
-                  height: "25px",
+                  marginRight: "38%",
+                  height: "28px",
                   borderRadius: "4px",
                 }}
               />

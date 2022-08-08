@@ -65,6 +65,7 @@ function BookingVehicles() {
           />
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
