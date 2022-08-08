@@ -20,9 +20,11 @@ function BookingBody() {
                 marginTop: "10px",
                 marginRight: "85%",
                 height: "25px",
+                borderRadius: "4px",
               }}
             />
           </div>
+          <label>Select your nearest branch</label>
           <DropdownBranches selected={selected} setSelected={setSelected} />
           <div className="BookingField">
             <label>Drop Location</label>
@@ -34,6 +36,7 @@ function BookingBody() {
                 marginTop: "10px",
                 marginRight: "85%",
                 height: "25px",
+                borderRadius: "4px",
               }}
             />
             <input
@@ -44,6 +47,7 @@ function BookingBody() {
                 marginTop: "10px",
                 marginRight: "85%",
                 height: "25px",
+                borderRadius: "4px",
               }}
             />
           </div>
