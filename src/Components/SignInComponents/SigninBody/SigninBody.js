@@ -118,7 +118,8 @@ export default function SigninBody() {
                 variant="contained"
                 style={{
                   cursor: "pointer",
-                  color: "orange",
+                  color: "black",
+                  background: "orange",
                 }}
               >
                 Login
@@ -130,7 +131,9 @@ export default function SigninBody() {
                     variant="body2"
                     style={{
                       cursor: "pointer",
-                      color: "orange",
+                      color: "black",
+                      marginTop: "5px",
+                      fontFamily: "'Roboto', sans-serif",
                     }}
                   >
                     {"Don't have an account? Sign Up"}
