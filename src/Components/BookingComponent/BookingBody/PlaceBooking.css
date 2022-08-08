@@ -2,7 +2,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    width: max-content;
+    text-align: center;
+    height: 20px;
     color: white;
     background: orange;
     padding: 0.75rem 1.2rem;
@@ -13,7 +14,7 @@
 }
 
 .PlaceBooking__btn:hover {
-    background: rgb(236, 212, 135);
+    background: rgb(226, 173, 0);
     color: black;
     border: 1px solid rgb(123, 88, 2);
 }
