@@ -147,6 +147,8 @@ export default function SigninBody() {
                       color: "black",
                       marginTop: "10px",
                       fontFamily: "'Roboto', sans-serif",
+                      color: "rgb(137, 119, 38)",
+                      textDecoration: "underline",
                     }}
                   >
                     {"Don't have an account? Sign Up"}

@@ -64,6 +64,7 @@ export default function SignUpBody() {
           >
             <Avatar
               style={{
+                marginTop: "60px",
                 margin: "1",
                 background: "orange",
               }}
@@ -125,9 +126,14 @@ export default function SignUpBody() {
                 <Grid item xs={12}>
                   <FormControlLabel
                     control={
-                      <Checkbox value="allowExtraEmails" color="primary" />
+                      <Checkbox
+                        value="allowExtraEmails"
+                        style={{
+                          color: "orange",
+                        }}
+                      />
                     }
-                    label="I want to receive inspiration, marketing promotions and updates via email."
+                    label="I want to receive updates via email."
                   />
                 </Grid>
               </Grid>
@@ -136,6 +142,10 @@ export default function SignUpBody() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
+                style={{
+                  color: "black",
+                  background: "orange",
+                }}
               >
                 Sign Up
               </Button>
@@ -149,6 +159,8 @@ export default function SignUpBody() {
                       color: "black",
                       marginTop: "5px",
                       fontFamily: "'Roboto', sans-serif",
+                      color: "rgb(137, 119, 38)",
+                      textDecoration: "underline",
                     }}
                   >
                     Already have an account? Sign in
