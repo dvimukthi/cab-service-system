@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../BookingBody/BookingBody.css";
+import BookingVehicles from "./BookingVehicles";
 import DropdownBranches from "./DropdownBranches";
 
 function BookingBody() {
@@ -53,6 +54,7 @@ function BookingBody() {
           </div>
         </div>
       </form>
+      <BookingVehicles />
     </div>
   );
 }
