@@ -67,7 +67,7 @@ function BookingBody() {
         width="600"
         height="600"
         style={{
-          marginTop: "20px",
+          marginTop: "80px",
           marginBottom: "5px",
           marginRight: "70px",
           borderRadius: "300px",
