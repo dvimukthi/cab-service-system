@@ -1,10 +1,14 @@
 .bookingBody__container {
-    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F1E6D4;
 }
 
 .bookingBody__container h1 {
     text-align: left;
     margin-left: 20px;
+    font-family: 'Tiro Gurmukhi', serif;
 }
 
 .Trip__container {
@@ -16,5 +20,10 @@
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 10px;
+}
+
+.Trip__container label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
