@@ -1,10 +1,11 @@
 .Bookingvehicles__container {
-    background: red;
     display: flex;
 }
 
 .Vehicle__item {
-    background: green;
+    height: 13rem;
+    width: 12rem;
+    background: white;
     padding: 15px;
     margin-left: 20px;
     margin: 20px;
@@ -12,15 +13,27 @@
     transition: all 0.5s;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    text-align: center;
 }
 
 .Vehicle__item:hover {
-    background: black;
+    background: orange;
 }
 
 .Vehicles {
 }
 
-.Vehicle__Checkbox {
-    margin-left: 20px;
+.Vehicle__Checkbox { 
+}
+
+.Vehicle__Checkbox h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.Vehicle__Checkbox p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }

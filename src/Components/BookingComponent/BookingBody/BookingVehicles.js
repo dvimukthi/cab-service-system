@@ -13,17 +13,11 @@ function BookingVehicles() {
     <div className="Bookingvehicles__container">
       <div className="Vehicle__item">
         <div className="Vehicles">
-          <img
-            src={BUDGETIMG}
-            alt=""
-            width="80"
-            height="80"
-            style={{
-              background: "orange",
-            }}
-          />
+          <img src={BUDGETIMG} alt="" width="80" height="80" style={{}} />
         </div>
         <div className="Vehicle__Checkbox">
+          <h3>Budget</h3>
+          <p>Max Passengers 3</p>
           <Checkbox
             {...label}
             sx={{
@@ -37,15 +31,11 @@ function BookingVehicles() {
       </div>
       <div className="Vehicle__item">
         <div className="Vehicles">
-          <img
-            src={CARIMG}
-            alt=""
-            width="80"
-            height="80"
-            style={{ background: "orange" }}
-          />
+          <img src={CARIMG} alt="" width="80" height="80" style={{}} />
         </div>
         <div className="Vehicle__Checkbox">
+          <h3>Car</h3>
+          <p>Max Passengers 4</p>
           <Checkbox
             {...label}
             sx={{
@@ -59,15 +49,11 @@ function BookingVehicles() {
       </div>
       <div className="Vehicle__item">
         <div className="Vehicles">
-          <img
-            src={VANIMG}
-            alt=""
-            width="80"
-            height="80"
-            style={{ background: "orange" }}
-          />
+          <img src={VANIMG} alt="" width="80" height="80" style={{}} />
         </div>
         <div className="Vehicle__Checkbox">
+          <h3>Van</h3>
+          <p>Max Passengers 10</p>
           <Checkbox
             {...label}
             sx={{
