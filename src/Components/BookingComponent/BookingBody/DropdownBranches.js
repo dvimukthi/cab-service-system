@@ -2,23 +2,38 @@ import React, { useState } from "react";
 import "./DropdownBranches.css";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
-function DropdownBranches() {
+function DropdownBranches({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
+  const options = [
+    "Galle",
+    "Kandy",
+    "Nugegoda",
+    "Gampaha",
+    "Kurunegala",
+    "Jaffna",
+  ];
 
   return (
     <div className="dropdown__container">
-      <div className="dropdown__btn">
-        Branches
+      <div className="dropdown__btn" onClick={(e) => setIsActive(!isActive)}>
+        Branch: {selected}
         <ArrowDropDownRoundedIcon />
       </div>
-      <div className="dropdown__content">
-        <div className="dropdown__item">Galle</div>
-        <div className="dropdown__item">Kandy</div>
-        <div className="dropdown__item">Nugegoda</div>
-        <div className="dropdown__item">Gampaha</div>
-        <div className="dropdown__item">Kurunegala</div>
-        <div className="dropdown__item">Jaffna</div>
-      </div>
+      {isActive && (
+        <div className="dropdown__content">
+          {options.map((option) => (
+            <div
+              onClick={(e) => {
+                setSelected(option);
+                setIsActive(false);
+              }}
+              className="dropdown__item"
+            >
+              {option}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

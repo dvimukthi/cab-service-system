@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../BookingBody/BookingBody.css";
 import DropdownBranches from "./DropdownBranches";
 
 function BookingBody() {
+  const [selected, setSelected] = useState("");
+
   return (
     <div className="bookingBody__container">
       <h1>Plan Your Trip</h1>
@@ -21,7 +23,7 @@ function BookingBody() {
               }}
             />
           </div>
-          <DropdownBranches />
+          <DropdownBranches selected={selected} setSelected={setSelected} />
           <div className="BookingField">
             <label>Drop Location</label>
             <input

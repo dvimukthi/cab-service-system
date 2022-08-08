@@ -1,6 +1,7 @@
 .dropdown__container {
     width: 200px;
     margin-top: 20px;
+    user-select: none;
     position: relative;
 }
 
