@@ -1,5 +1,5 @@
 import React from "react";
-import "../SigninBody/SigninBody.css";
+import "./SigninBody.css";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -30,21 +30,23 @@ export default function SigninBody() {
 
   return (
     <div className="signinbody__container">
-      <Grid container component="main" sx={{ height: "100vh" }}>
+      <Grid
+        container
+        component="main"
+        style={{
+          height: "100vh",
+        }}
+      >
         <CssBaseline />
         <Grid
           item
           xs={false}
           sm={4}
           md={7}
-          sx={{
+          style={{
             backgroundImage:
-              "url(https://srilankanfasttaxi.lk/wp-content/uploads/2021/08/taxi_services.png)",
+              "url(https://img.freepik.com/premium-vector/female-order-online-taxi-tiny-woman-character-use-internet-mobile-app-service-isolated-white-cartoon-illustration_169479-954.jpg?w=2000)",
             backgroundRepeat: "no-repeat",
-            backgroundColor: (t) =>
-              t.palette.mode === "light"
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
