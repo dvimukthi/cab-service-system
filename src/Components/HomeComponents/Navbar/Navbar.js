@@ -14,12 +14,17 @@ function Navbar() {
     navigate("/signup");
   };
 
+  const loadHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="container">
       <div className="logo__img">
         <img
           src={LOGO}
           alt=""
+          onClick={loadHome}
           width="70"
           height="70"
           style={{
