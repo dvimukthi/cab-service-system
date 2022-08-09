@@ -20,6 +20,10 @@ function Footer() {
     navigate("/Privacy");
   };
 
+  const loadHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="footer__container">
       <div className="footeritems">
@@ -28,6 +32,7 @@ function Footer() {
           alt=""
           width="150"
           height="150"
+          onClick={loadHome}
           style={{
             marginTop: "20px",
             marginLeft: "15px",
