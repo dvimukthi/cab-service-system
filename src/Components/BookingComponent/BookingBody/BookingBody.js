@@ -19,7 +19,7 @@ function BookingBody() {
               <input
                 type="text"
                 name="PickupLocation"
-                placeholder="Pickup Location"
+                placeholder="Your Current Location"
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
@@ -47,6 +47,24 @@ function BookingBody() {
                 type="text"
                 name="city"
                 placeholder="City"
+                style={{
+                  marginTop: "10px",
+                  marginRight: "38%",
+                  height: "28px",
+                  borderRadius: "4px",
+                }}
+              />
+              <label
+                style={{
+                  marginTop: "10px",
+                }}
+              >
+                Trip Total Distance
+              </label>
+              <input
+                type="text"
+                name="distance"
+                placeholder="Total Kilometers"
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
