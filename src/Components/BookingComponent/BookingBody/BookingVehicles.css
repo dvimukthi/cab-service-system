@@ -20,6 +20,7 @@
 
 .Vehicle__item:hover {
     background: rgb(246, 176, 46);
+    border: 1px solid black;
 }
 
 .Vehicles {
