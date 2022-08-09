@@ -5,7 +5,7 @@ function ContactUsBody() {
   return (
     <div className="ContactUs__Container">
       <div className="ContactUs__partOne">
-        <div className="ContactUs__text">
+        <div className="PartOne__text">
           <h2>Hotlines</h2>
           <p>
             <h3>General Inquiries</h3>

@@ -10,14 +10,32 @@
     background: green;
     height: 35rem;
     width: 48%;
+    margin-left: 20px;
+    border-radius: 25px;
 }
 
-.ContactUs__text{
-    margin-left: 10px;
+.PartOne__text{
+    margin-top: 50px;
+    margin-left: 40px;
 }
+
+.PartOne__text h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.PartOne__text p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.PartOne__text h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
 
 .ContactUs__partTwo {
     background: red;
     height: 35rem;
     width: 48%;
+    margin-right: 20px;
 }
