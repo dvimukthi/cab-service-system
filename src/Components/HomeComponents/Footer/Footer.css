@@ -1,5 +1,5 @@
 .footer__container {
-    background: rgb(248, 180, 78);
+    background: #E2C275;
     height: 12rem;
     flex-direction: row;
 }
@@ -34,7 +34,7 @@
 
 .footer__copyright {
     height: 50px;
-    background: rgb(190, 123, 0);
+    background: #C36A2D;
     flex-direction: column;
 }
 
@@ -45,4 +45,5 @@
     text-align: center;
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
