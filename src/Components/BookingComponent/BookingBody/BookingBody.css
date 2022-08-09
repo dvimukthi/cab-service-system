@@ -4,9 +4,11 @@
     height: auto;
     justify-content: space-between;
     background-color: #f5d6a0;
+    padding-bottom: 150px;
 }
 
 .boookingparttwo__container {
+    height: auto;
 }
 
 .bookingBody__container h1 {
