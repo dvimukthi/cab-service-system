@@ -1,0 +1,16 @@
+.AboutUs__Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 38rem;
+    align-items: center;
+    background: #F5F5F5;
+}
+
+.AboutUs__partOne{}
+
+.PartOne {}
+
+.AboutUs__partTwo {}
+
+.PartTwo {}
