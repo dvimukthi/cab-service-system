@@ -1,0 +1,17 @@
+.ContactUs__Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ContactUs__partOne {
+    background: green;
+    height: 35rem;
+    width: 48%;
+}
+
+.ContactUs__partTwo {
+    background: red;
+    height: 35rem;
+    width: 48%;
+}
