@@ -16,7 +16,7 @@ function BookingVehicles() {
           <img src={BUDGETIMG} alt="" width="80" height="80" style={{}} />
         </div>
         <div className="Vehicle__Checkbox">
-          <h3>Budget</h3>
+          <h3>Mini</h3>
           <p>Max Passengers 3</p>
           <Checkbox
             {...label}

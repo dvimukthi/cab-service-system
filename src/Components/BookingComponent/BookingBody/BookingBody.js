@@ -56,10 +56,10 @@ function BookingBody() {
               />
               <label
                 style={{
-                  marginTop: "10px",
+                  marginTop: "15px",
                 }}
               >
-                Trip Total Distance
+                Total Trip Distance
               </label>
               <input
                 type="number"
