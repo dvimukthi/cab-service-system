@@ -2,16 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 38rem;
+    height: 48rem;
     align-items: center;
+    background: #F5F5F5;
 }
 
 .ContactUs__partOne {
-    background: green;
+    background: #EEE8AA;
     height: 35rem;
     width: 48%;
     margin-left: 20px;
     border-radius: 25px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
 }
 
 .PartOne__text{
@@ -34,8 +36,28 @@
 
 
 .ContactUs__partTwo {
-    background: red;
-    height: 35rem;
+    background: #EEE8AA;
+    height: 45rem;
     width: 48%;
     margin-right: 20px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
+}
+
+.PartTwo__text {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.PartTwo__text h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.PartTwo__text p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.PartTwo__text h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
 }
