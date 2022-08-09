@@ -1,5 +1,6 @@
 import React from "react";
 import "../AboutUsBody/AboutUsBody.css";
+import LOGO from "../../../Assets/GoCheeta logo.png";
 
 function AboutUsBody() {
   return (
@@ -19,7 +20,19 @@ function AboutUsBody() {
         </div>
       </div>
       <div className="AboutUs__partTwo">
-        <div className="PartTwo"></div>
+        <div className="PartTwo">
+          <img
+            src={LOGO}
+            alt=""
+            width="400"
+            height="400"
+            style={
+              {
+                // marginLeft: "7px",
+              }
+            }
+          />
+        </div>
       </div>
     </div>
   );
