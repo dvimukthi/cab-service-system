@@ -62,7 +62,7 @@ function BookingBody() {
                 Trip Total Distance
               </label>
               <input
-                type="text"
+                type="number"
                 name="distance"
                 placeholder="Total Kilometers"
                 style={{
