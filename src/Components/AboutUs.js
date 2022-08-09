@@ -1,12 +1,14 @@
 import React from "react";
+import Navbar from "../Components/HomeComponents/Navbar/Navbar";
 import AboutUsBody from "./AboutUsComponents/AboutUsBody/AboutUsBody";
-import AboutUsHeader from "./AboutUsComponents/AboutUsHeader/AboutUsHeader";
+import Footer from "../Components/HomeComponents/Footer/Footer";
 
 function AboutUs() {
   return (
     <div>
-      <AboutUsHeader />
+      <Navbar />
       <AboutUsBody />
+      <Footer />
     </div>
   );
 }
