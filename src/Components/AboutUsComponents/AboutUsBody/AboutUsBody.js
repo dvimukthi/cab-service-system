@@ -24,13 +24,11 @@ function AboutUsBody() {
           <img
             src={LOGO}
             alt=""
-            width="400"
-            height="400"
-            style={
-              {
-                // marginLeft: "7px",
-              }
-            }
+            width="500"
+            height="500"
+            style={{
+              marginRight: "10px",
+            }}
           />
         </div>
       </div>
