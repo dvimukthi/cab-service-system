@@ -92,12 +92,12 @@ function BookingBody() {
       <img
         src={BOOKINGPAGEIMG}
         alt=""
-        width="600"
-        height="600"
+        width="300"
+        height="300"
         style={{
           marginTop: "80px",
           marginBottom: "5px",
-          marginRight: "70px",
+          marginRight: "50%",
           borderRadius: "300px",
         }}
       />

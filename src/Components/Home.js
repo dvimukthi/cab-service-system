@@ -5,6 +5,7 @@ import BodyPartTwo from "./HomeComponents/BodyPartTwo/BodyPartTwo";
 import Footer from "./HomeComponents/Footer/Footer";
 import Header from "./HomeComponents/Header/Header";
 import Navbar from "./HomeComponents/Navbar/Navbar";
+import Slideshow from "./HomeComponents/Slideshow/Slideshow";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Navbar />
       <Header />
       <BodyPartOne />
+      <Slideshow />
       <BodyPartTwo />
       <BodyPartThree />
       <Footer />
