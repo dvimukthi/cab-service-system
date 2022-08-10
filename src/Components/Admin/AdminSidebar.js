@@ -1,6 +1,7 @@
 import React from "react";
 import "./AdminSidebar.css";
 import AdminImg from "../../Assets/admin.png";
+import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 
 function AdminSidebar() {
   return (
@@ -28,7 +29,11 @@ function AdminSidebar() {
         <p>Vehicle List</p>
         <p>Add Vehicle Category</p>
       </div>
-      <div className="LogOutBtn">Log Out</div>
+
+      <div className="LogOutBtn">
+        <ExitToAppRoundedIcon />
+        Log Out
+      </div>
     </div>
   );
 }

@@ -40,5 +40,18 @@
 }
 
 .LogOutBtn {
+    display: flex;
+    justify-items: center;
     margin-top: 5rem;
+    background: burlywood;
+    padding: 5px;
+    outline: 2px solid rgb(149, 93, 8);
+    outline-offset: .2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.LogOutBtn:hover {
+    background: rgb(246, 176, 46);
+        border: 1px solid black;
 }
