@@ -6,8 +6,8 @@ import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 function AdminSidebar() {
   return (
     <div className="Sidebar__Container">
+      <h2>GoCheeta</h2>
       <div className="Profile__Container">
-        <h2>GoCheeta</h2>
         <img
           src={AdminImg}
           alt=""
