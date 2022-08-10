@@ -6,6 +6,7 @@ import Footer from "./HomeComponents/Footer/Footer";
 import Header from "./HomeComponents/Header/Header";
 import Navbar from "./HomeComponents/Navbar/Navbar";
 import Slideshow from "./HomeComponents/Slideshow/Slideshow";
+import { SlideshowData } from "./HomeComponents/Slideshow/SlideshowData";
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
       <Navbar />
       <Header />
       <BodyPartOne />
-      <Slideshow />
+      <Slideshow slides={SlideshowData} />
       <BodyPartTwo />
       <BodyPartThree />
       <Footer />
