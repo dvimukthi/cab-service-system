@@ -22,6 +22,13 @@ function AdminSidebar() {
         />
         <h3>Admin</h3>
       </div>
+      <div className="SidebarItems__Container">
+        <p>Driver List</p>
+        <p>Add Vehicles</p>
+        <p>Vehicle List</p>
+        <p>Add Vehicle Category</p>
+      </div>
+      <div className="LogOutBtn">Log Out</div>
     </div>
   );
 }

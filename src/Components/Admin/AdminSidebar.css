@@ -18,6 +18,27 @@
     align-items: center;
 }
 
-.Profile__Container h3 {
+.Profile__Container h2 {
+    font-family: 'Patrick Hand', cursive;
+    text-shadow: rgb(199, 124, 13) 1px 0 10px;
+}
 
+.Profile__Container h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.SidebarItems__Container{
+    background: rgb(232, 166, 119);
+    width: 90%;
+    border-radius: 40px 10px 40px 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
+}
+
+.SidebarItems__Container p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.LogOutBtn {
+    margin-top: 5rem;
 }
