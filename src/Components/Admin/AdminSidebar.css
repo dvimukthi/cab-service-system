@@ -9,6 +9,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 15px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
 }
 
 .Sidebar__Container h2 {

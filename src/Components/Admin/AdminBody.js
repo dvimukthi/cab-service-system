@@ -5,7 +5,7 @@ import AdminSidebar from "./AdminSidebar";
 
 function AdminBody() {
   return (
-    <div>
+    <div className="AdminBody__Container">
       <AdminSidebar />
       <AdminMain />
     </div>
