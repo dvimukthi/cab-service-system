@@ -41,7 +41,7 @@
 }
 
 .SidebarItems__Container p {
-    /* margin-top: 30px; */
+    cursor: pointer;
     padding: 10px 10px;
     display: flex;
     flex-direction: row;
