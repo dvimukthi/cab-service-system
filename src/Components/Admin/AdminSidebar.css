@@ -1,7 +1,7 @@
 .Sidebar__Container {
     display: flex;
     flex-direction: column;
-    background: grey;
+    background: rgb(143, 120, 81);
     width: 20%;
     height: 100vh;
     border-radius: 2rem;
