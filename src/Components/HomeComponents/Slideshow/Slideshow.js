@@ -32,7 +32,16 @@ const Slideshow = ({ slides }) => {
         onClick={prevSlide}
       />
       {SlideshowData.map((slide, index) => {
-        return <img src={slide.Image} alt="taxi image" className="Image" />;
+        return (
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.Image} alt="taxi image" className="Image" />
+            )}
+          </div>
+        );
       })}
     </section>
   );
