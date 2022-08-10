@@ -27,6 +27,17 @@ function BookingBody() {
                   borderRadius: "4px",
                 }}
               />
+              <input
+                type="text"
+                name="city"
+                placeholder="City"
+                style={{
+                  marginTop: "10px",
+                  marginRight: "38%",
+                  height: "28px",
+                  borderRadius: "4px",
+                }}
+              />
             </div>
             <label>Select your nearest branch</label>
             <DropdownBranches selected={selected} setSelected={setSelected} />

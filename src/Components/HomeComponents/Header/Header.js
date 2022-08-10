@@ -10,7 +10,7 @@ function Header() {
           Book the best taxi
           <br /> that you are <br /> looking for
         </h1>
-        <h2>"GoCheetah" offer the lowest rates in Sri Lanka.</h2>
+        <h2>"GoCheeta" offer the lowest rates in Sri Lanka.</h2>
         <h3>
           We always provide reliable, trustworthy service covering the entire
           island.
