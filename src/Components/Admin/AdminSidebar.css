@@ -36,14 +36,23 @@
     margin-top: 20px;
     background: rgb(232, 166, 119);
     width: 90%;
-    border-radius: 40px 10px 40px 10px;
+    border-radius: 20px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 30%);
 }
 
 .SidebarItems__Container p {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+.SidebarItems__Container p:hover {
+    background: rgb(246, 176, 46);
+    border: 1px solid rgb(209, 169, 83);
 }
 
 .LogOutBtn {
@@ -60,5 +69,5 @@
 
 .LogOutBtn:hover {
     background: rgb(246, 176, 46);
-        border: 1px solid black;
+    border: 1px solid black;
 }
