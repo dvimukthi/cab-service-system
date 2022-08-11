@@ -7,8 +7,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { cardActionAreaClasses } from "@mui/material";
 
-function CustomerBookings(
+function createData(
   name,
   pickupLocation,
   dropLocation,
@@ -35,42 +36,18 @@ function CustomerBookings(
 }
 
 const rows = [
-  CustomerBookings(
-    "roy roy",
-    rfg,
-    wesdcsdvdslisara,
-    10,
-    gampaha,
-    dsvsdvdsvsdvsdvsdv,
-    mini,
-    nano,
-    wd1234,
-    500
-  ),
-  CustomerBookings(
-    "Rgfb grgrey",
-    kafdvfdvdfdana,
-    wefdfvdfvdfvfdlisara,
-    50,
-    gampaha,
-    diutkyikyukkkaz,
-    mini,
-    wagonr,
-    wp1234,
-    200
-  ),
-  CustomerBookings(
-    "hhh Rtrhtyjoy",
-    kaewefwefdana,
-    welisara,
-    5,
-    gampaha,
+  createData(
+    "Roy Roy",
+    colombo,
+    wattala,
+    20,
+    nugegoda,
     diaz,
     mini,
     nano,
-    wp1234,
-    500
+    wp1234
   ),
+  createData("Roy Roy", gampaha, colombo, 30, gampaha, peris, car, bmw, pw5678),
 ];
 
 export default function BasicTable() {
@@ -79,7 +56,7 @@ export default function BasicTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>customer name</TableCell>
+            <TableCell>Customer Name</TableCell>
             <TableCell align="right">pickupLocation</TableCell>
             <TableCell align="right">dropLocation</TableCell>
             <TableCell align="right">kilometers</TableCell>
