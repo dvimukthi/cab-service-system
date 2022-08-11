@@ -1,0 +1,14 @@
+.container {
+    height: 70px;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
