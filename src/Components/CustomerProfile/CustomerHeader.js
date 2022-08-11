@@ -7,11 +7,13 @@ import { useNavigate } from "react-router";
 function CustomerHeader() {
   const navigate = useNavigate();
 
+  //   Navigate to home page
   const loadHome = () => {
     navigate("/");
   };
 
   return (
+    // Add GoCheeta Logo
     <div className="container">
       <div className="logo__img">
         <img
@@ -25,6 +27,7 @@ function CustomerHeader() {
           }}
         />
       </div>
+      {/* Add Customer Profile Picture */}
       <div className="profile__logo">
         <img
           src={UserProfile}
