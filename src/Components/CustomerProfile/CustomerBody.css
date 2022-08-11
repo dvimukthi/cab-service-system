@@ -1,11 +1,11 @@
 .CustomerBody__Container {
     display: flex;
-    background: red;
+    flex-direction: column;
     height: 100vh;
+    background: rgb(209, 179, 127);
 }
 
 .ProfileDetails__Container {
-    background: yellow;
     width: 100%;
     height: 32%;
 }
@@ -17,7 +17,6 @@
 }
 
 .Details__Container {
-    background: green;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +27,7 @@
 }
 
 .Details{
-    background: olive;
+    background: rgb(251, 216, 134);
     margin-left: 10px;
     width: 30%;
     border-radius: 15px;

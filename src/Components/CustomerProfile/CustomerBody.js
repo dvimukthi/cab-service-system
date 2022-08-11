@@ -1,6 +1,7 @@
 import React from "react";
 import "./CustomerBody.css";
 import UserProfile from "../../Assets/user-profile-img.png";
+import CustomerBookings from "./CustomerBookings";
 
 function CustomerBody() {
   return (
@@ -29,6 +30,8 @@ function CustomerBody() {
           </div>
         </div>
       </div>
+      {/* customer previous bookings table */}
+      <CustomerBookings />
     </div>
   );
 }
