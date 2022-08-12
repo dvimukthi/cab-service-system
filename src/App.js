@@ -5,6 +5,7 @@ import Admin from "./Components/Admin";
 import Booking from "./Components/Booking";
 import ContactUs from "./Components/ContactUs";
 import CustomerProfile from "./Components/CustomerProfile";
+import Driver from "./Components/Driver";
 import Home from "./Components/Home";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import SignIn from "./Components/SignIn";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Privacy" exact element={<PrivacyPolicy />} />
         <Route path="/admin" exact element={<Admin />} />
         <Route path="/customerprofile" exact element={<CustomerProfile />} />
+        <Route path="/driver" exact element={<Driver />} />
       </Routes>
     </Router>
   );
