@@ -1,0 +1,14 @@
+.DriverProfile__Container {
+    display: flex;
+    flex-direction: column;
+    background: red;
+}
+
+.DriverProfile__Container h1 {
+    margin-left: 20px;
+}
+
+.DriverProfile__Container p {
+    margin-top: -15px;
+    margin-left: 20px;
+}
