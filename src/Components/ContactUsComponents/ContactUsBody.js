@@ -5,6 +5,7 @@ function ContactUsBody() {
   return (
     <div className="ContactUs__Container">
       <div className="ContactUs__partOne">
+        {/* hotlines section */}
         <div className="PartOne__text">
           <h2>Hotlines</h2>
           <p>
@@ -32,6 +33,7 @@ function ContactUsBody() {
         </div>
       </div>
       <div className="ContactUs__partTwo">
+        {/* branches section */}
         <div className="PartTwo__text">
           <h2>Branches</h2>
           <p>

@@ -15,6 +15,7 @@ import { useNavigate } from "react-router";
 
 export default function SigninBody() {
   const navigate = useNavigate();
+  // signup page linking
   const loadSignUp = () => {
     navigate("/signup");
   };
@@ -38,6 +39,7 @@ export default function SigninBody() {
         }}
       >
         <CssBaseline />
+        {/* bg image */}
         <Grid
           item
           xs={false}
@@ -72,6 +74,7 @@ export default function SigninBody() {
               alignItems: "center",
             }}
           >
+            {/* signin icon */}
             <Avatar
               style={{
                 margin: "1",
@@ -94,6 +97,7 @@ export default function SigninBody() {
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
             >
+              {/* form */}
               <TextField
                 margin="normal"
                 required
@@ -114,6 +118,7 @@ export default function SigninBody() {
                 id="password"
                 autoComplete="current-password"
               />
+              {/* login checkbox */}
               <FormControlLabel
                 control={
                   <Checkbox
@@ -125,6 +130,7 @@ export default function SigninBody() {
                 }
                 label="Remember me"
               />
+              {/* login button */}
               <Button
                 type="submit"
                 fullWidth
@@ -139,6 +145,7 @@ export default function SigninBody() {
               </Button>
               <Grid container>
                 <Grid item>
+                  {/* link signup page */}
                   <div
                     onClick={loadSignUp}
                     variant="body2"

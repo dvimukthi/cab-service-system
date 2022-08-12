@@ -11,6 +11,7 @@ function BodyPartOne() {
   };
   return (
     <div className="bodypartone__container">
+      {/* promotion image section */}
       <div className="bodypartone__part1">
         <img
           src={PROMOTIONIMG}
@@ -22,8 +23,8 @@ function BodyPartOne() {
           }}
         />
       </div>
-
       <div className="bodypartone__part2">
+        {/* book Now section */}
         <img
           src={RIDEIMG}
           alt=""
@@ -41,6 +42,7 @@ function BodyPartOne() {
           where you need to travel by simply booking a taxi online with
           "GoCheetah".
         </p>
+        {/* book now button */}
         <div className="NeedRide__btn" onClick={loadBooking}>
           Book Now
         </div>

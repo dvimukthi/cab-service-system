@@ -6,6 +6,7 @@ function AboutUsBody() {
   return (
     <div className="AboutUs__Container">
       <div className="AboutUs__partOne">
+        {/* about text section */}
         <div className="PartOne">
           <h2>About Us</h2>
           <p>
@@ -20,6 +21,7 @@ function AboutUsBody() {
         </div>
       </div>
       <div className="AboutUs__partTwo">
+        {/* logo section */}
         <div className="PartTwo">
           <img
             src={LOGO}

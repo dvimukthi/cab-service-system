@@ -7,6 +7,7 @@ function AdminSidebar() {
   return (
     <div className="Sidebar__Container">
       <h2>GoCheeta</h2>
+      {/* admin image component */}
       <div className="Profile__Container">
         <img
           src={AdminImg}
@@ -23,13 +24,14 @@ function AdminSidebar() {
         />
         <h3>Admin</h3>
       </div>
+      {/* sidebar contents */}
       <div className="SidebarItems__Container">
         <p>Driver List</p>
         <p>Add Vehicles</p>
         <p>Vehicle List</p>
         <p>Add Vehicle Category</p>
       </div>
-
+      {/* log out button */}
       <div className="LogOutBtn">
         <ExitToAppRoundedIcon />
         Log Out

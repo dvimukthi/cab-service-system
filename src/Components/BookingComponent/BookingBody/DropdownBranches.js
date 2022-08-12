@@ -3,6 +3,7 @@ import "./DropdownBranches.css";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
 function DropdownBranches({ selected, setSelected }) {
+  // usestate
   const [isActive, setIsActive] = useState(false);
   const options = [
     "Galle",
@@ -14,6 +15,7 @@ function DropdownBranches({ selected, setSelected }) {
   ];
 
   return (
+    // dropdown
     <div className="dropdown__container">
       <div className="dropdown__btn" onClick={(e) => setIsActive(!isActive)}>
         Branch: {selected}

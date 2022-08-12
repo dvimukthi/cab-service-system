@@ -11,6 +11,7 @@ function BookingBody() {
   return (
     <div className="bookingBody__container">
       <div className="boookingparttwo__container">
+        {/* from */}
         <form>
           <h1>Plan Your Trip</h1>
           <div className="Trip__container">
@@ -40,6 +41,7 @@ function BookingBody() {
               />
             </div>
             <label>Select your nearest branch</label>
+            {/* dropdown branches box */}
             <DropdownBranches selected={selected} setSelected={setSelected} />
             <div className="BookingField">
               <label>Drop Location</label>
@@ -86,9 +88,12 @@ function BookingBody() {
             </div>
           </div>
         </form>
+        {/* booking vehicles part */}
         <BookingVehicles />
+        {/* place booking part */}
         <PlaceBooking />
       </div>
+      {/* booking img */}
       <img
         src={BOOKINGPAGEIMG}
         alt=""

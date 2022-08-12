@@ -4,10 +4,13 @@ import "../PrivacyPolicyBody/PrivacyPolicyBody.css";
 function PrivacyPolicyBody() {
   return (
     <div className="PrivacyPolicytext__container">
+      {/* heading */}
       <h1>GoCheeta (Pvt) Ltd</h1>
 
+      {/* sub heading */}
       <h2>USER PRIVACY STATEMENT</h2>
 
+      {/* paragraph */}
       <p>
         GoCheeta(Lanka) Private Limited collects information about you when you
         use our GoCheeta User App, websites, and other online products and
@@ -16,6 +19,7 @@ function PrivacyPolicyBody() {
         information collected and used by GoCheeta.
       </p>
 
+      {/* mini heading */}
       <h3>Scope and Application</h3>
 
       <p>

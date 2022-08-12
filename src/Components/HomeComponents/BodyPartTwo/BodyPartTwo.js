@@ -10,9 +10,11 @@ import COMMITMENTTOSAFETY from "../../../Assets/BodyPartTwo Icons/saiftycommitme
 function BodyPartTwo() {
   return (
     <div className="bodyparttwo__container">
+      {/* text */}
       <h2>Why Ride With Us</h2>
       <div className="bodyparttwoIcon__container">
         <div className="bodyparttwoIcon">
+          {/* images and text */}
           <img
             src={PERSONALCHAUFFEURS}
             alt=""

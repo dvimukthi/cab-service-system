@@ -16,6 +16,7 @@ import { useNavigate } from "react-router";
 
 export default function SignUpBody() {
   const navigate = useNavigate();
+  // link signin page
   const loadSignIn = () => {
     navigate("/signin");
   };
@@ -39,6 +40,7 @@ export default function SignUpBody() {
         }}
       >
         <CssBaseline />
+        {/* bg image */}
         <Grid
           item
           xs={false}
@@ -62,6 +64,7 @@ export default function SignUpBody() {
               alignItems: "center",
             }}
           >
+            {/* signup icon */}
             <Avatar
               style={{
                 marginTop: "60px",
@@ -81,6 +84,7 @@ export default function SignUpBody() {
               sx={{ mt: 3 }}
             >
               <Grid container spacing={2}>
+                {/* form */}
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="given-name"
@@ -124,6 +128,7 @@ export default function SignUpBody() {
                   />
                 </Grid>
                 <Grid item xs={12}>
+                  {/* signup checkbox */}
                   <FormControlLabel
                     control={
                       <Checkbox
@@ -137,6 +142,7 @@ export default function SignUpBody() {
                   />
                 </Grid>
               </Grid>
+              {/* signup button */}
               <Button
                 type="submit"
                 fullWidth
@@ -151,6 +157,7 @@ export default function SignUpBody() {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
+                  {/* signin link */}
                   <div
                     onClick={loadSignIn}
                     variant="body2"

@@ -5,6 +5,7 @@ import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRound
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 
 const Slideshow = ({ slides }) => {
+  // usestate
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -22,11 +23,13 @@ const Slideshow = ({ slides }) => {
     return null;
   }
   return (
+    // next slide icon
     <section className="slider">
       <ArrowForwardIosRoundedIcon
         className="leftArrowIcon"
         onClick={nextSlide}
       />
+      {/* previous slide icon */}
       <ArrowBackIosNewRoundedIcon
         className="RightArrowIcon"
         onClick={prevSlide}

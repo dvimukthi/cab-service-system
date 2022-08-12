@@ -9,17 +9,23 @@ import { useNavigate } from "react-router";
 
 function Footer() {
   const navigate = useNavigate();
+
+  // link about us page
   const loadAboutUs = () => {
     navigate("/About");
   };
+
+  // link contact us page
   const loadContactUs = () => {
     navigate("/Contact");
   };
 
+  // load privacy policy page
   const LoadPrivacyPolicy = () => {
     navigate("/Privacy");
   };
 
+  // load home page
   const loadHome = () => {
     navigate("/");
   };
@@ -27,6 +33,7 @@ function Footer() {
   return (
     <div className="footer__container">
       <div className="footeritems">
+        {/* logo image */}
         <img
           src={FOOTERIMG}
           alt=""
@@ -43,6 +50,7 @@ function Footer() {
         <p onClick={LoadPrivacyPolicy}>Privacy & Terms</p>
         <div className="footer__socialmedia">
           <h3>Follow Us</h3>
+          {/* social media icons */}
           <img
             src={FCEBOOKIMG}
             alt=""
@@ -84,6 +92,7 @@ function Footer() {
           />
         </div>
       </div>
+      {/* footer copyright section */}
       <div className="footer__copyright">
         <p>Copyright 2022 GoCheeta All Rights Reserved</p>
       </div>

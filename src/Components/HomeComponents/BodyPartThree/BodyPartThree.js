@@ -7,8 +7,10 @@ import IMG3 from "../../../Assets/BodyPartThree Icons/drive to destination.png";
 function BodyPartThree() {
   return (
     <div className="bodypartthree__container">
+      {/* heading */}
       <h2>How GoCheetah Works</h2>
       <div className="bodypartthreeIcon__container">
+        {/* images and text section */}
         <div className="bodypartthreeIcon">
           <p>1. Accept the request</p>
           <img

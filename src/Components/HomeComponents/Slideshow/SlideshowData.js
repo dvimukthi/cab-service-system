@@ -1,3 +1,4 @@
+// images links
 export const SlideshowData = [
   {
     Image:

@@ -5,6 +5,7 @@ import headervideo from "../../../Assets/headervideo.mp4";
 function Header() {
   return (
     <div className="header__container">
+      {/* header text */}
       <div className="header__text">
         <h1>
           Book the best taxi
@@ -16,6 +17,7 @@ function Header() {
           island.
         </h3>
       </div>
+      {/* header video */}
       <div className="header__video">
         <video
           src={headervideo}
