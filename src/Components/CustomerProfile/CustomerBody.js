@@ -25,8 +25,8 @@ function CustomerBody() {
           />
           {/* customer details part */}
           <div className="Details">
-            <h3>Name: Roy Roy</h3>
-            <h3>Email: Roy@gmail.com</h3>
+            <h3>Name: </h3>
+            <h3>Email: </h3>
           </div>
         </div>
       </div>
