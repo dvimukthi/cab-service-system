@@ -1,9 +1,15 @@
 import React from "react";
 import "./DriverDetails.css";
+import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 
 function DriverDetails() {
   return (
     <div className="DriverProfile__Container">
+      {/* driver log out button */}
+      <div className="Driver__LogOutBtn">
+        <ExitToAppRoundedIcon />
+        Log Out
+      </div>
       {/* driver details */}
       <h1>Driver Profile</h1>
       <p>

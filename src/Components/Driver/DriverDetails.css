@@ -11,4 +11,22 @@
 .DriverProfile__Container p {
     margin-top: -15px;
     margin-left: 20px;
+    font-size: 13px;
+}
+
+.Driver__LogOutBtn {
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    margin-top: 20px;
+    margin-left: 92%;
+    background: burlywood;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Driver__LogOutBtn:hover {
+    background: rgb(246, 176, 46);
+    border: 1px solid black;
 }
