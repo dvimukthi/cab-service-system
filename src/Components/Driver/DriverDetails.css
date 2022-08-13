@@ -1,7 +1,7 @@
 .DriverProfile__Container {
     display: flex;
     flex-direction: column;
-    background: red;
+    background: rgb(248, 225, 150);
 }
 
 .DriverProfile__Container h1 {
