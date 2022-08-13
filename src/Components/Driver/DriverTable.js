@@ -19,8 +19,7 @@ function createData(name, pickupLocation, dropLocation, kilometers, price) {
 }
 
 const rows = [
-  //   createData("Roy Roy", colombo, wattala, 20),
-  //   createData("Roy Roy", gampaha, colombo, 30),
+  // createData("Roy Roy", colombo, wattala, 20, 300)
 ];
 
 export default function BasicTable() {
