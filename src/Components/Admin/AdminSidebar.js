@@ -28,8 +28,8 @@ function AdminSidebar() {
       <div className="SidebarItems__Container">
         <p>Driver List</p>
         <p>Add Vehicles</p>
-        <p>Vehicle List</p>
         <p>Add Vehicle Category</p>
+        <p>Branches</p>
       </div>
       {/* log out button */}
       <div className="LogOutBtn">
