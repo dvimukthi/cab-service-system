@@ -10,13 +10,18 @@ function AboutUsBody() {
         <div className="PartOne">
           <h2>About Us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            From humble beginnings to Sri Lanka’s most trusted business-class
+            car service in just over 10 years, GoCheeta have grown with and for
+            the times. And yet, so little has changed about us. We still believe
+            that minicabs can be so much more than just a means to an end our
+            clients are right to expect extraordinary standards, and by allying
+            the latest technologies with traditional customer service values, we
+            can not only disrupt the industry, we can revolutionise it. Today,
+            our cars are responsible for getting over 1 million people where
+            they need to go each year in sri lanka alone. And with our business
+            expanding every day across the sri lanka. we will continue to
+            deliver that same executive service consistently, no matter where we
+            are.
           </p>
         </div>
       </div>
