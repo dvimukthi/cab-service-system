@@ -19,6 +19,10 @@
     cursor: pointer;
 }
 
+.footeritems p:hover {
+    color: white;
+}
+
 .footer__socialmedia {
     margin-right: 15px;
 }

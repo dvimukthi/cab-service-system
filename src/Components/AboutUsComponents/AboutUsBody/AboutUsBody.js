@@ -16,7 +16,7 @@ function AboutUsBody() {
             that minicabs can be so much more than just a means to an end our
             clients are right to expect extraordinary standards, and by allying
             the latest technologies with traditional customer service values, we
-            can not only disrupt the industry, we can revolutionise it. Today,
+            can not only disrupt the industry, we can revolutionie it. Today,
             our cars are responsible for getting over 1 million people where
             they need to go each year in sri lanka alone. And with our business
             expanding every day across the sri lanka. we will continue to
