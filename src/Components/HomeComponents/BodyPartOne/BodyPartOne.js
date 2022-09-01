@@ -40,7 +40,7 @@ function BodyPartOne() {
         <p>
           You can trust on us to give you a safe and comfortable ride no matter
           where you need to travel by simply booking a taxi online with
-          "GoCheetah".
+          "GoCheeta".
         </p>
         {/* book now button */}
         <div className="NeedRide__btn" onClick={loadBooking}>
