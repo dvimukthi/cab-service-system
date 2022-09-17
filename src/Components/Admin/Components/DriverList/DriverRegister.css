@@ -1,6 +1,12 @@
+.DriverRegisterMain__Container{
+display: flex;
+flex-direction: column;
+}
+
 .DriverRegister__Container {
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-top: 25px;
 }
 
