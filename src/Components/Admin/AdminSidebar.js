@@ -31,6 +31,7 @@ function AdminSidebar() {
         <p>Add Vehicle Category</p>
         <p>Branches</p>
       </div>
+
       {/* log out button */}
       <div className="LogOutBtn">
         <ExitToAppRoundedIcon />

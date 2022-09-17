@@ -10,6 +10,11 @@ import Home from "./Components/Home";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
+import AdminBody from "./Components/Admin/AdminBody";
+import DriverList from "./Components/Admin/Components/DriverList";
+import AddVehicles from "./Components/Admin/Components/AddVehicles";
+import AddVehicleCategories from "./Components/Admin/Components/AddVehicleCategories";
+import Branch from "./Components/Admin/Components/Branch";
 
 function App() {
   return (
@@ -25,6 +30,15 @@ function App() {
         <Route path="/admin" exact element={<Admin />} />
         <Route path="/customerprofile" exact element={<CustomerProfile />} />
         <Route path="/driver" exact element={<Driver />} />
+
+        <Route path="/driverlist" exact element={<DriverList />} />
+        <Route path="/addvehicles" exact element={<AddVehicles />} />
+        <Route
+          path="/addvehiclecategories"
+          exact
+          element={<AddVehicleCategories />}
+        />
+        <Route path="/branches" exact element={<Branch />} />
       </Routes>
     </Router>
   );
