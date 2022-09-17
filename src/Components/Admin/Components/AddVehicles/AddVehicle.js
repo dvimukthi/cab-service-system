@@ -62,7 +62,7 @@ function AddVehicle() {
                 }}
               />
 
-              <label>Price For 1Km</label>
+              {/* <label>Price For 1Km</label>
               <input
                 type="text"
                 name="VehiclePrice"
@@ -73,7 +73,7 @@ function AddVehicle() {
                   height: "28px",
                   borderRadius: "4px",
                 }}
-              />
+              /> */}
 
               <label>Select Vehicle Branch</label>
               {/* dropdown driver branch dropdown */}

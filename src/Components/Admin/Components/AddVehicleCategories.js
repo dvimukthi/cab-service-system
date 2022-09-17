@@ -1,10 +1,10 @@
 import React from "react";
+import VehicleCategory from "./VehicleCategory/VehicleCategory";
 
 function AddVehicleCategories() {
   return (
     <div>
-      AddVehicleCategories
-      <h1>Add vehicle category</h1>
+      <VehicleCategory />
     </div>
   );
 }

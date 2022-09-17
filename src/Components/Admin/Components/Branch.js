@@ -1,10 +1,10 @@
 import React from "react";
+import Branches from "./Branch/Branches";
 
 function Branch() {
   return (
     <div>
-      Branch
-      <h1>Branches</h1>
+      <Branches />
     </div>
   );
 }

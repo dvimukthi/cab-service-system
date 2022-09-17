@@ -1,0 +1,11 @@
+.VehicleCategoryTables__Container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(248, 225, 150);
+    height: 22rem;
+    margin-top: 10%;
+}
+
+.VehicleCategoryTables__Container h3 {
+    text-align: center;
+}
