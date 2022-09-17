@@ -4,7 +4,7 @@ import "./Branches.css";
 function Branches() {
   return (
     <div>
-      <h1>Branches</h1>
+      <h1>Branches list</h1>
     </div>
   );
 }
