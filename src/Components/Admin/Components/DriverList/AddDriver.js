@@ -3,10 +3,7 @@ import "./AddDriver.css";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-
 import DriverVehicleType from "./DriverVehicleType";
 import DriverBranch from "./DriverBranch";
 
@@ -29,10 +26,10 @@ function AddDriver() {
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle className="DriverRegister__container">
-          Add a Driver
+          Driver Registration
         </DialogTitle>
 
-        <form>
+        <form className="DriverForm__Container">
           <div className="Register__Form">
             <div className="DriverRegisterField">
               <label>Name</label>
@@ -41,7 +38,7 @@ function AddDriver() {
                 name="DriverName"
                 placeholder="Enter Driver Name"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "5px",
                   marginRight: "38%",
                   height: "28px",
                   borderRadius: "4px",
@@ -54,7 +51,7 @@ function AddDriver() {
                 name="DriverEmail"
                 placeholder="Enter Driver Email"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "5px",
                   marginRight: "38%",
                   height: "28px",
                   borderRadius: "4px",
@@ -67,7 +64,7 @@ function AddDriver() {
                 name="DriverPhoneNumber"
                 placeholder="Enter Driver Phone Number"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "5px",
                   marginRight: "38%",
                   height: "28px",
                   borderRadius: "4px",
@@ -79,7 +76,7 @@ function AddDriver() {
                 name="DriverPassword"
                 placeholder="Enter Password"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "5px",
                   marginRight: "38%",
                   height: "28px",
                   borderRadius: "4px",
@@ -87,7 +84,7 @@ function AddDriver() {
               />
 
               <label>Select Driver's Vehicle Type</label>
-              {/* dropdown vehicle type box */}
+              {/* dropdown vehicle type dropdown */}
               <DriverVehicleType
                 selected={selected}
                 setSelected={setSelected}
@@ -99,7 +96,7 @@ function AddDriver() {
                 name="DriverName"
                 placeholder="Enter Vehicle Name"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "5px",
                   marginRight: "38%",
                   height: "28px",
                   borderRadius: "4px",
@@ -112,14 +109,14 @@ function AddDriver() {
                 name="DriverNumberPlate"
                 placeholder="Enter Vehicle NumberPlate"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "5px",
                   marginRight: "38%",
                   height: "28px",
                   borderRadius: "4px",
                 }}
               />
               <label>Select Driver's Branch</label>
-              {/* dropdown driver branch box */}
+              {/* dropdown driver branch dropdown */}
               <DriverBranch selected={selected} setSelected={setSelected} />
             </div>
 

@@ -1,9 +1,10 @@
 import React from "react";
+import DriverRegister from "./DriverList/DriverRegister";
 
 function DriverList() {
   return (
     <div>
-      <h1>Drivers</h1>
+      <DriverRegister />
     </div>
   );
 }
