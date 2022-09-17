@@ -1,10 +1,10 @@
 import React from "react";
+import VehicleRegister from "./AddVehicles/VehicleRegister";
 
 function AddVehicles() {
   return (
     <div>
-      AddVehicles
-      <h1>Add vehicles</h1>
+      <VehicleRegister />
     </div>
   );
 }

@@ -1,0 +1,45 @@
+.VehicleForm__Container {
+    margin-left: 30px;
+}
+
+.VehicleRegister__Form {
+    width: 500px;
+    height: auto;
+}
+
+.VehicleRegister__container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.VehicleRegisterField {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.VehicleRegister__Form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.VehicleBtn {
+    margin-top: 20px;
+    height: 20px;
+    width: 100px;
+    color: black;
+    background: orange;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.VehicleBtn:hover {
+    background: rgb(255, 119, 0);
+    color: white;
+}

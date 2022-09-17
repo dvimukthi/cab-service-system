@@ -1,0 +1,41 @@
+.VehicleBranchDropdown__container {
+    width: 225px;
+    margin-top: 10px;
+    user-select: none;
+    position: relative;
+}
+
+.VehicleBranchDropdown__btn {
+    padding: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.VehicleBranchDropdown__content {
+    position: absolute;
+    background: #ebeadd;
+    top: 110%;
+    width: 225px;
+    left: 0;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.VehicleBranchDropdown__item {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.VehicleBranchDropdown__item:hover {
+    background: #EEE8AA;
+}
