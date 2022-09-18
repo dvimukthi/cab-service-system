@@ -17,6 +17,8 @@ import AddVehicleCategories from "./Components/Admin/Components/AddVehicleCatego
 import Branch from "./Components/Admin/Components/Branch";
 import AvailableVehicles from "./Components/BookingComponent/BookingPopupComponents/AvailableVehicles";
 import TripDetailsPage from "./Components/BookingComponent/BookingPopupComponents/TripDetailsPage";
+import DriverTripConfirm from "./Components/Driver/DriverTripConfirm";
+import ArrivedLocation from "./Components/Driver/ArrivedLocation";
 
 function App() {
   return (
@@ -38,6 +40,12 @@ function App() {
           element={<AvailableVehicles />}
         />
         <Route path="/tripdetailspage" exact element={<TripDetailsPage />} />
+        <Route
+          path="/drivertripconfirm"
+          exact
+          element={<DriverTripConfirm />}
+        />
+        <Route path="/arrivedlocation" exact element={<ArrivedLocation />} />
 
         <Route path="/driverlist" exact element={<DriverList />} />
         <Route path="/addvehicles" exact element={<AddVehicles />} />
