@@ -16,6 +16,7 @@ import AddVehicles from "./Components/Admin/Components/AddVehicles";
 import AddVehicleCategories from "./Components/Admin/Components/AddVehicleCategories";
 import Branch from "./Components/Admin/Components/Branch";
 import AvailableVehicles from "./Components/BookingComponent/BookingPopupComponents/AvailableVehicles";
+import TripDetailsPage from "./Components/BookingComponent/BookingPopupComponents/TripDetailsPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           exact
           element={<AvailableVehicles />}
         />
+        <Route path="/tripdetailspage" exact element={<TripDetailsPage />} />
 
         <Route path="/driverlist" exact element={<DriverList />} />
         <Route path="/addvehicles" exact element={<AddVehicles />} />

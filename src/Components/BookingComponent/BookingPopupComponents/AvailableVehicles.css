@@ -1,11 +1,9 @@
-*{
-    background: rgb(248, 225, 150);
-}
+
 
 .AvailableVehicles__Container {
     display: flex;
     flex-direction: column;
-    background: rgb(248, 225, 150);
+    /* background: rgb(248, 225, 150); */
     height: auto;
     margin-top: 2%;
 }
