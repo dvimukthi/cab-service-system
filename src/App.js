@@ -15,6 +15,7 @@ import DriverList from "./Components/Admin/Components/DriverList";
 import AddVehicles from "./Components/Admin/Components/AddVehicles";
 import AddVehicleCategories from "./Components/Admin/Components/AddVehicleCategories";
 import Branch from "./Components/Admin/Components/Branch";
+import AvailableVehicles from "./Components/BookingComponent/BookingPopupComponents/AvailableVehicles";
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
         <Route path="/admin" exact element={<Admin />} />
         <Route path="/customerprofile" exact element={<CustomerProfile />} />
         <Route path="/driver" exact element={<Driver />} />
+        <Route
+          path="/availablevehicles"
+          exact
+          element={<AvailableVehicles />}
+        />
 
         <Route path="/driverlist" exact element={<DriverList />} />
         <Route path="/addvehicles" exact element={<AddVehicles />} />
