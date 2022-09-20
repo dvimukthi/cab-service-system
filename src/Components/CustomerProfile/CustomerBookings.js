@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CustomerBookings.css";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -8,48 +8,26 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-function createData(
-  name,
-  pickupLocation,
-  dropLocation,
-  kilometers,
-  branch,
-  driverName,
-  vehicleType,
-  vehicleName,
-  vehicleNumber,
-  price
-) {
-  return {
-    name,
-    pickupLocation,
-    dropLocation,
-    kilometers,
-    branch,
-    driverName,
-    vehicleType,
-    vehicleName,
-    vehicleNumber,
-    price,
-  };
-}
 
-const rows = [
-  // createData(
-  //   "Roy Roy",
-  //   colombo,
-  //   wattala,
-  //   20,
-  //   nugegoda,
-  //   diaz,
-  //   mini,
-  //   nano,
-  //   wp1234
-  // ),
-  // createData("Roy Roy", gampaha, colombo, 30, gampaha, peris, car, bmw, pw5678),
-];
+
 
 export default function BasicTable() {
+  const [rows, setRows] = useState([]);
+  useEffect(()=>{
+    setRows([{
+          name:"Roy Roy", 
+          pickupLocation:"gampaha",
+          dropLocation: "colombo", 
+          kilometers:"30", 
+          branch:"gampaha", 
+          driverName:"peris", 
+          vehicleType:"car", 
+          vehicleName:"bmw", 
+          vehicleNumber:"pw5678",
+          price:1000
+    }]);
+  },[]);
+
   return (
     <div className="BookingTable__Container">
       <h3>Your Bookings</h3>

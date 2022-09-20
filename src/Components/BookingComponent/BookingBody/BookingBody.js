@@ -4,10 +4,52 @@ import BookingVehicles from "./BookingVehicles";
 import DropdownBranches from "./DropdownBranches";
 import PlaceBooking from "./PlaceBooking";
 import BOOKINGPAGEIMG from "../../../Assets/BookingImg/bookingpage.png";
+import axios from 'axios';
+
+let initialVals = {
+  pickup_street:'',
+  pickup_city:'',
+  branch:'',
+  drop_street:'',
+  drop_city:'',
+  distance:'',
+  mini:false,
+  car:false,
+  van:false,
+  customer_id:1,
+};
 
 function BookingBody() {
   const [selected, setSelected] = useState("");
+  const [values, setValues] = useState(initialVals);
 
+  function handleChange(e, targetName=null, targetVal=null) {
+    var name = e.target.name;
+    var val = e.target.value;
+    if(targetName=='branch') {
+      val = targetVal;
+      name = targetName;
+    } else if(targetName && targetVal) {
+      val = e.target.checked;
+      name = targetName;
+    } 
+    setValues({
+      ...values,
+      [name]:val
+   });
+   console.log(values);
+  }
+
+  async function placeBooking () {
+    var res = await axios.post(
+        'http://localhost:3001/trip',
+        values,
+        );
+      console.log(res);
+      if(res.status == 201) {
+        alert("Trip Saved successfully with trip id "+res.data.id+" !");
+      }
+  }
   return (
     <div className="bookingBody__container">
       <div className="boookingparttwo__container">
@@ -19,8 +61,10 @@ function BookingBody() {
               <label>Pickup Location</label>
               <input
                 type="text"
-                name="PickupLocation"
+                name="pickup_street"
+                value={values.pickup_street}
                 placeholder="Your Current Location"
+                onChange={handleChange}
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
@@ -30,8 +74,9 @@ function BookingBody() {
               />
               <input
                 type="text"
-                name="city"
-                placeholder="City"
+                name="pickup_city"
+                placeholder="pickup_city"
+                onChange={handleChange}
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
@@ -42,13 +87,14 @@ function BookingBody() {
             </div>
             <label>Select your nearest branch</label>
             {/* dropdown branches box */}
-            <DropdownBranches selected={selected} setSelected={setSelected} />
+            <DropdownBranches handleChange={handleChange} selected={selected} setSelected={setSelected} />
             <div className="BookingField">
               <label>Drop Location</label>
               <input
                 type="text"
-                name="StreetAddress"
+                name="drop_street"
                 placeholder="Street Address"
+                onChange={handleChange}
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
@@ -59,7 +105,8 @@ function BookingBody() {
               <input
                 type="text"
                 name="city"
-                placeholder="City"
+                placeholder="drop_city"
+                onChange={handleChange}
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
@@ -78,6 +125,7 @@ function BookingBody() {
                 type="number"
                 name="distance"
                 placeholder="Total Kilometers"
+                onChange={handleChange}
                 style={{
                   marginTop: "10px",
                   marginRight: "38%",
@@ -89,9 +137,11 @@ function BookingBody() {
           </div>
         </form>
         {/* booking vehicles part */}
-        <BookingVehicles />
+        <BookingVehicles
+        handleChange={handleChange} />
         {/* place booking part */}
-        <PlaceBooking />
+        <PlaceBooking 
+          placeBooking={placeBooking}/>
       </div>
       {/* booking img */}
       <img

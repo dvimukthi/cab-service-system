@@ -1,10 +1,10 @@
 import React from "react";
 import AdminBody from "./Admin/AdminBody";
 
-function Admin() {
+function Admin({widget}) {
   return (
     <div>
-      <AdminBody />
+      <AdminBody widget={widget}/>
     </div>
   );
 }

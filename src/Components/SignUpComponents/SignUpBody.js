@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./SignUpBody.css";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -13,22 +13,71 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { useNavigate } from "react-router";
+import axios from 'axios'
+
+const initialVals = {
+  first_name:'',
+  last_name:'',
+  email:'',
+  password:'',
+  allowExtraEmails:false,
+  address:'',
+  phone_number:'',
+  trip_count:0,
+  type:'CUSTOMER'
+};
 
 export default function SignUpBody() {
+  const [values, setValues] = useState(initialVals);
   const navigate = useNavigate();
   // link signin page
   const loadSignIn = () => {
     navigate("/signin");
   };
 
+
+  function handleChange(e) {
+    var name = e.target.name;
+    var val = e.target.value;
+    console.log(name,e.target.checked )
+    if('allowExtraEmails'==name) {
+      val = e.target.checked;
+    } 
+    setValues({
+      ...values,
+      [name]:val
+   });
+   console.log(values);
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
+    const data = new FormData();
+    data.append('first_name',values.first_name);
+    data.append('last_name',values.last_name);
+    data.append('email',values.email);
+    data.append('password',values.password);
+    data.append('allowExtraEmails',values.allowExtraEmails);
+    data.append('address',values.address);
+    data.append('phone_number',values.phone_number);
+    data.append('trip_count',values.trip_count);
+    data.append('type',values.type);
+
+    axios.post("http://localhost:3001/customer",
+      data,
+      {
+          'Content-Type':  'multipart/form-data;',
+      }).then(function (response) {
+        //handle success
+        if(response.status == 201){
+          loadSignIn();
+        }
+      })
+      .catch(function (response) {
+        //handle error
+        console.log(response);
+      });
+  }
 
   return (
     <div className="Signupbody__container">
@@ -88,10 +137,11 @@ export default function SignUpBody() {
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="given-name"
-                    name="firstName"
+                    name="first_name"
                     required
                     fullWidth
-                    id="firstName"
+                    onChange={handleChange}
+                    id="first_name"
                     label="First Name"
                     autoFocus
                   />
@@ -100,9 +150,10 @@ export default function SignUpBody() {
                   <TextField
                     required
                     fullWidth
-                    id="lastName"
+                    id="last_name"
                     label="Last Name"
-                    name="lastName"
+                    name="last_name"
+                    onChange={handleChange}
                     autoComplete="family-name"
                   />
                 </Grid>
@@ -113,6 +164,7 @@ export default function SignUpBody() {
                     id="email"
                     label="Email Address"
                     name="email"
+                    onChange={handleChange}
                     autoComplete="email"
                   />
                 </Grid>
@@ -124,6 +176,7 @@ export default function SignUpBody() {
                     label="Password"
                     type="password"
                     id="password"
+                    onChange={handleChange}
                     autoComplete="new-password"
                   />
                 </Grid>
@@ -133,9 +186,11 @@ export default function SignUpBody() {
                     control={
                       <Checkbox
                         value="allowExtraEmails"
+                        name="allowExtraEmails"
                         style={{
                           color: "orange",
                         }}
+                        onChange={handleChange}
                       />
                     }
                     label="I want to receive updates via email."

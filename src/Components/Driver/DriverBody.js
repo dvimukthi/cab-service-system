@@ -2,11 +2,11 @@ import React from "react";
 import DriverDetails from "./DriverDetails";
 import DriverTable from "./DriverTable";
 
-function DriverBody() {
+function DriverBody({userId}) {
   return (
     <div>
-      <DriverDetails />
-      <DriverTable />
+      <DriverDetails userId={userId}/>
+      <DriverTable userId={userId}/>
     </div>
   );
 }

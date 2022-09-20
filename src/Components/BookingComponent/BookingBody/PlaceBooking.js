@@ -1,19 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router";
 import "./PlaceBooking.css";
 
-function PlaceBooking() {
-  const navigate = useNavigate();
 
-  const loadAvailableVehicles = () => {
-    navigate("/availablevehicles");
-  };
+function PlaceBooking({placeBooking}) {
+  function confirmTrip(e) {
+    placeBooking();
+  }
 
-  return (
-    <div className="PlaceBooking__btn" onClick={loadAvailableVehicles}>
-      Confirm Booking
-    </div>
-  );
+  return <div className="PlaceBooking__btn" onClick={confirmTrip}>Confirm Booking</div>;
 }
 
 export default PlaceBooking;

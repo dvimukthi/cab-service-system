@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BookingVehicles.css";
 import { orange } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
@@ -8,7 +8,9 @@ import VANIMG from "../../../Assets/BookingImg/van.png";
 
 const label = { inputProps: { "aria-label": "Checkbox bookingVehicles" } };
 
-function BookingVehicles() {
+function BookingVehicles({handleChange}) {
+  const [checked, setChecked] = useState([]);
+
   return (
     <div className="Bookingvehicles__container">
       <div className="Vehicle__item">
@@ -22,6 +24,7 @@ function BookingVehicles() {
           <p>Max Passengers 3</p>
           {/* checkbox */}
           <Checkbox
+            onChange={(e)=>{handleChange(e, "mini", "mini")}}
             {...label}
             sx={{
               color: orange[800],
@@ -43,6 +46,7 @@ function BookingVehicles() {
           <p>Max Passengers 4</p>
           {/* checkbox */}
           <Checkbox
+            onChange={(e)=>{handleChange(e, "car", "car")}}
             {...label}
             sx={{
               color: orange[800],
@@ -64,6 +68,7 @@ function BookingVehicles() {
           <p>Max Passengers 10</p>
           {/* checkbox */}
           <Checkbox
+            onChange={(e)=>{handleChange(e, "van", "van")}}
             {...label}
             sx={{
               color: orange[800],

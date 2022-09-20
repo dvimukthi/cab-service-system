@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./DriverDetails.css";
 import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 
-function DriverDetails() {
+import axios from 'axios';
+
+function DriverDetails({userId}) {
+  const [driver, setDriver] = useState({});
+  const [reload, setReload] = useState(true);
+  
+  useEffect(()=>{
+    if(reload)
+      getDriverDetail();
+  },[reload]);
+  
+  async function getDriverDetail() {
+    var response = await axios.get(`http://localhost:3001/driver/${userId}`);
+    if(response.status == 200) {
+      setDriver(response.data);
+    }
+  }
   return (
     <div className="DriverProfile__Container">
       {/* driver log out button */}
@@ -13,12 +29,9 @@ function DriverDetails() {
       {/* driver details */}
       <h1>Driver Profile</h1>
       <p>
-        <h2>Driver Name: </h2>
-        <h2>Driver Email: </h2>
-        <h2>Branch: </h2>
-        <h2>Vehicle Type: </h2>
-        <h2>Vehicle Name: </h2>
-        <h2>Vehicle Number: </h2>
+        <h2>Driver Name: {driver.firstName} {driver.lastName}</h2>
+        <h2>Driver Email: {driver.email}</h2>
+        <h2>Branch: {driver.branch}</h2>
       </p>
     </div>
   );

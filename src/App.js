@@ -15,10 +15,6 @@ import DriverList from "./Components/Admin/Components/DriverList";
 import AddVehicles from "./Components/Admin/Components/AddVehicles";
 import AddVehicleCategories from "./Components/Admin/Components/AddVehicleCategories";
 import Branch from "./Components/Admin/Components/Branch";
-import AvailableVehicles from "./Components/BookingComponent/BookingPopupComponents/AvailableVehicles";
-import TripDetailsPage from "./Components/BookingComponent/BookingPopupComponents/TripDetailsPage";
-import DriverTripConfirm from "./Components/Driver/DriverTripConfirm";
-import ArrivedLocation from "./Components/Driver/ArrivedLocation";
 
 function App() {
   return (
@@ -33,28 +29,22 @@ function App() {
         <Route path="/Privacy" exact element={<PrivacyPolicy />} />
         <Route path="/admin" exact element={<Admin />} />
         <Route path="/customerprofile" exact element={<CustomerProfile />} />
-        <Route path="/driver" exact element={<Driver />} />
-        <Route
-          path="/availablevehicles"
-          exact
-          element={<AvailableVehicles />}
+        <Route path="/driver/:id"  element={
+          <Driver  />} 
         />
-        <Route path="/tripdetailspage" exact element={<TripDetailsPage />} />
-        <Route
-          path="/drivertripconfirm"
-          exact
-          element={<DriverTripConfirm />}
+        <Route path="/driverlist"  element={
+          <Admin widget="driverlist" />} 
         />
-        <Route path="/arrivedlocation" exact element={<ArrivedLocation />} />
-
-        <Route path="/driverlist" exact element={<DriverList />} />
-        <Route path="/addvehicles" exact element={<AddVehicles />} />
-        <Route
-          path="/addvehiclecategories"
-          exact
-          element={<AddVehicleCategories />}
+        <Route path="/addvehicles" element=
+        {
+         <Admin widget="addvehicles" />
+        } />
+        <Route path="/addvehiclecategories"
+          element={<Admin widget="addvehiclecategories" />}
         />
-        <Route path="/branches" exact element={<Branch />} />
+        <Route path="/branches"
+          element={<Admin widget="branches" />}
+        />
       </Routes>
     </Router>
   );

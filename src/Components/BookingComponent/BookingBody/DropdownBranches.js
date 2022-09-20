@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./DropdownBranches.css";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
-function DropdownBranches({ selected, setSelected }) {
+function DropdownBranches({ selected, setSelected, handleChange }) {
   // usestate
   const [isActive, setIsActive] = useState(false);
   const options = [
@@ -28,6 +28,7 @@ function DropdownBranches({ selected, setSelected }) {
               onClick={(e) => {
                 setSelected(option);
                 setIsActive(false);
+                handleChange(e, 'branch', option);
               }}
               className="dropdown__item"
             >
