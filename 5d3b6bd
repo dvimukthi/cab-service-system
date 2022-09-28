@@ -1,0 +1,139 @@
+[33m5d3b6bd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m add tripdetails
+[33m8f92c99[m ass tripdetails
+[33m1673a9d[m axios
+[33maa397a4[m admin route and connect
+[33mdec5462[m ArrivedLocation
+[33mb4b392a[m DriverTripConfirm
+[33m7a07dcd[m TripDetailsPage
+[33m0395fc9[m AvailableVehicles
+[33mad12252[m admin branch
+[33mb67770f[m Admin vehicle categories
+[33m406d521[m Admin, Add Vehicles
+[33mbadd6ad[m driver branch tables
+[33mc87db0c[m DriverTable
+[33mb6181d7[m Driver register form
+[33m6f4e4f3[m DriverRegister
+[33m0b8f8a6[m admin components
+[33m80f4ba5[m customerprofile css
+[33mde9e78c[m slideshow height
+[33m3ea387a[m footer hover
+[33ma845a16[m AboutUsBody
+[33m42273ef[m admin sidebar edit
+[33m5784e86[m driver table cmt
+[33m5a23afa[m table edit
+[33md92fe0c[m DriverTable
+[33ma1f2c66[m Driver__LogOutBtn
+[33mf3d4b37[m driver details
+[33mdebb7b7[m Driver
+[33m103caf3[m Details update
+[33m10ef69f[m cmt
+[33m78b20a6[m table edit
+[33ma8f4ea0[m CustomerBookings table
+[33m49fafc9[m CustomerBookings
+[33m63821df[m Details styles
+[33mc0c54c2[m add CustomerBody
+[33md34b327[m CustomerHeader style
+[33md3e0249[m CustomerHeader UseNavigate
+[33m1d6c6c9[m CustomerHeader
+[33m528de93[m Slideshow css
+[33me80c145[m SlideshowData.map
+[33m16e81dc[m nextSlide & prevSlide Array
+[33ma87fa7c[m nextSlide
+[33md680ee0[m Slideshow styles
+[33m09afe02[m slides
+[33m679a982[m import arrow icons
+[33m71ca37e[m SlideshowData Image
+[33m90a52de[m SlideshowData
+[33m6575f5d[m AdminSidebar update
+[33m8f93cfe[m AdminMain style
+[33m556cc1f[m AdminMain
+[33m0931e37[m Admin Sidebar hover
+[33m1346d2e[m admin img bg
+[33mc5acafb[m admin LogOutBtn
+[33m3fac3a1[m admin sidebar style
+[33m9936d08[m admin image style
+[33ma15ee2c[m AdminImg
+[33m4747da6[m AdminSidebar
+[33m70f449f[m Admin folder
+[33m10519d6[m booking style update
+[33m48126d2[m footer__copyright
+[33m6601d53[m bookingVehicle hover
+[33mfea4494[m BookingVehicles update
+[33mf4e17db[m booking distance
+[33mca5e790[m booking page distance
+[33mfa07ccf[m Footer loadHome route
+[33m76b86f4[m Navbar loadHome route
+[33me8bb485[m AboutUsBody
+[33mfcde899[m add about us logo
+[33m7760c72[m AboutUs__partOne
+[33mfdde673[m AboutUs nav & footer
+[33m39e2aee[m PrivacyPolicy styles update
+[33mc252afd[m ContactUs style
+[33mf693406[m ContactUsPartOne fonts
+[33m4425473[m ContactUsPartOne text
+[33m2e82e30[m ContactUs Containers
+[33m7e4d8b8[m ContactUsBody
+[33mf8f490c[m PrivacyPolicy bg
+[33mb674cd4[m SignUpBody css
+[33m87dc1da[m signin & signup textDecoration
+[33m2b0c032[m Signin Routes
+[33m0502eb8[m add signup img
+[33m24ecb7e[m SignUpBody
+[33m24a0afd[m signin bgimg
+[33mae9bd42[m Signin style
+[33m5c09abf[m LockOutlinedIcon style
+[33m52b6cda[m signup route
+[33m392d422[m add signin page
+[33m61a1736[m bodypartone__part1 style
+[33m47afce9[m BOOKINGPAGEIMG style
+[33m083e6bf[m PlaceBooking style
+[33mb62af6d[m PlaceBooking btn hover
+[33mdf86445[m PlaceBooking btn
+[33mf4474f2[m BookingVehicles hover
+[33m3a067ca[m BookingBody center
+[33m1ca64dd[m add BOOKINGPAGEIMG
+[33m8a7ab28[m BookingVehicles margins
+[33mb12df6f[m BookingVehicles new img
+[33m51ec138[m Bookingvehicles style
+[33m1c0cfdf[m add booking img
+[33m9e83781[m Checkbox
+[33m114e503[m import BookingVehicles
+[33me0c8c25[m BookingVehicles
+[33m4580516[m Branch useState
+[33ma366564[m dropdown useState
+[33mcd1865c[m dropdown styles
+[33m3390382[m Dropdown content
+[33mfc970f9[m Dropdown Branches
+[33m1a9844d[m Routes
+[33m88597b2[m footer change
+[33m1e9fca4[m footer change
+[33m3f20472[m react-router
+[33mb3e234f[m booking placeholder
+[33mf62df35[m Booking Page
+[33m7ea6917[m AboutUs Body
+[33m4197314[m AboutUs
+[33m8065b08[m PrivacyPolicy styles
+[33m78b5c57[m privacy
+[33m4e701c4[m privacybody
+[33mdc87216[m Privacy Policy
+[33maad618b[m SignIn
+[33me70b9d4[m footer styles
+[33m5246fc5[m add footer bar
+[33m718d30b[m add footer
+[33m72a8641[m complete bodypartone
+[33md598d34[m BodyPartOne img
+[33mca29012[m bodypartthree style
+[33m642da02[m Add BodyPartThree
+[33mbd3bb85[m complete BodyPartTwo
+[33mdfe8dbe[m BodyPartTwo Container
+[33m17f4415[m edit bodypartone
+[33mf1a19a2[m bodyPartTwo
+[33mf719445[m header style
+[33ma146256[m add header
+[33me44de99[m body part2 bg change
+[33m96ff134[m right container
+[33m49946fe[m Book Now container
+[33m0a9b696[m Navbar folder change
+[33med77c4b[m Navbar
+[33mc7d8e54[m Navbar
+[33m84ad248[m Initialize project using Create React App
