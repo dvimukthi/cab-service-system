@@ -29,22 +29,14 @@ function App() {
         <Route path="/Privacy" exact element={<PrivacyPolicy />} />
         <Route path="/admin" exact element={<Admin />} />
         <Route path="/customerprofile" exact element={<CustomerProfile />} />
-        <Route path="/driver/:id"  element={
-          <Driver  />} 
-        />
-        <Route path="/driverlist"  element={
-          <Admin widget="driverlist" />} 
-        />
-        <Route path="/addvehicles" element=
-        {
-         <Admin widget="addvehicles" />
-        } />
-        <Route path="/addvehiclecategories"
+        <Route path="/driver/:id" element={<Driver />} />
+        <Route path="/driverlist" element={<Admin widget="driverlist" />} />
+        <Route path="/addvehicles" element={<Admin widget="addvehicles" />} />
+        <Route
+          path="/addvehiclecategories"
           element={<Admin widget="addvehiclecategories" />}
         />
-        <Route path="/branches"
-          element={<Admin widget="branches" />}
-        />
+        <Route path="/branches" element={<Admin widget="branches" />} />
       </Routes>
     </Router>
   );
