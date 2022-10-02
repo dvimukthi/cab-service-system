@@ -1,24 +1,16 @@
+import { Button, Dialog, DialogActions, DialogTitle } from "@mui/material";
 import React, { useState } from "react";
+import DriverBranch from "./DriverBranch";
+import DriverVehicleType from "./DriverVehicleType";
 import "./EditDriver.css";
 
 function EditDriver() {
   const [open, setOpen] = React.useState(false);
   const [selected, setSelected] = React.useState("");
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
+  
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Edit
-      </Button>
-      <Dialog open={open} onClose={handleClose}>
         <DialogTitle className="EditDriverRegister__container">
           Update Driver
         </DialogTitle>
@@ -117,10 +109,6 @@ function EditDriver() {
             <div className="EditDriverBtn">update Driver</div>
           </div>
         </form>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
-      </Dialog>
     </React.Fragment>
   );
 }

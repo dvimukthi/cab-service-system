@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./DriverVehicleType.css";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
-function DriverVehicleType({ selected, setSelected }) {
+function DriverVehicleType({ values, handleSelect }) {
   // usestate
   const [isActive, setIsActive] = useState(false);
   const options = ["Mini", "Car", "Van"];
@@ -14,18 +14,19 @@ function DriverVehicleType({ selected, setSelected }) {
         className="DriverVehicleDropdown__btn"
         onClick={(e) => setIsActive(!isActive)}
       >
-        Type: {selected}
+        Type: {values.vehicleType}
         <ArrowDropDownRoundedIcon />
       </div>
       {isActive && (
         <div className="DriverVehicleDropdown__content">
-          {options.map((option) => (
+          {options.map((option, index) => (
             <div
               onClick={(e) => {
-                setSelected(option);
+                handleSelect('vehicleType', option);
                 setIsActive(false);
               }}
               className="DriverVehicleDropdown__item"
+              key={index}
             >
               {option}
             </div>

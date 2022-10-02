@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./DriverBranch.css";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
-function DriverBranch({ selected, setSelected }) {
+function DriverBranch({ values, handleSelect }) {
   // usestate
   const [isActive, setIsActive] = useState(false);
   const options = [
@@ -21,18 +21,19 @@ function DriverBranch({ selected, setSelected }) {
         className="DriverBranchDropdown__btn"
         onClick={(e) => setIsActive(!isActive)}
       >
-        Type: {selected}
+        Type: {values.branch}
         <ArrowDropDownRoundedIcon />
       </div>
       {isActive && (
         <div className="DriverBranchDropdown__content">
-          {options.map((option) => (
+          {options.map((option, index) => (
             <div
               onClick={(e) => {
-                setSelected(option);
+                handleSelect('branch',option);
                 setIsActive(false);
               }}
               className="DriverBranchDropdown__item"
+              key={index}
             >
               {option}
             </div>
