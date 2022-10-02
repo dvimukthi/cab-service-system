@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./VehicleBranch.css";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
-function VehicleBranch({ selected, setSelected }) {
+function VehicleBranch({ values, handleSelect }) {
   // usestate
   const [isActive, setIsActive] = useState(false);
   const options = [
@@ -21,18 +21,19 @@ function VehicleBranch({ selected, setSelected }) {
         className="VehicleBranchDropdown__btn"
         onClick={(e) => setIsActive(!isActive)}
       >
-        Type: {selected}
+         Branch: {values.branch}
         <ArrowDropDownRoundedIcon />
       </div>
       {isActive && (
         <div className="VehicleBranchDropdown__content">
-          {options.map((option) => (
+          {options.map((option, index) => (
             <div
               onClick={(e) => {
-                setSelected(option);
+                handleSelect('branch',option);
                 setIsActive(false);
               }}
               className="VehicleBranchDropdown__item"
+              key={index}
             >
               {option}
             </div>

@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./VehicleRegister.css";
 
-import AddVehicle from "./AddVehicle";
+import AddEditVehicle from "./AddEditVehicle";
 import VehicleRegisteredTables from "./VehicleRegisteredTables";
 
 function VehicleRegister() {
+  const [status, setStatus] = useState(false);
+  const [id, setId] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [reload, setReload] = useState(true);
   return (
     <div className="VehicleRegisterMain__Container">
       <div className="VehicleRegister__Container">
         <h2>Vehicle Registration</h2>
-        <AddVehicle />
+        <AddEditVehicle 
+          status = {status}
+          id={id}
+          open={open}
+          setStatus={setStatus}
+          setId={setId}
+          setOpen={setOpen}
+          setReload={setReload}
+        />
       </div>
-      <VehicleRegisteredTables />
+      <VehicleRegisteredTables 
+        setStatus={setStatus}
+        setId={setId}
+        setOpen={setOpen}
+        reload={reload}
+        setReload={setReload}
+      />
     </div>
   );
 }

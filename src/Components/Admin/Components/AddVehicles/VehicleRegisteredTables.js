@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./VehicleRegisteredTables.css";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -8,59 +8,97 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-function createData(
-  VehicleType,
-  VehicleName,
-  VehicleNumberPlate,
-  Price,
-  Status,
-  Edit,
-  Delete
-) {
-  return {
-    VehicleType,
-    VehicleName,
-    VehicleNumberPlate,
-    Price,
-    Status,
-    Edit,
-    Delete,
-  };
-}
+import axios from "axios";
+import { IconButton } from "@mui/material";
+import CreateIcon from '@mui/icons-material/Create';
+import DeleteIcon from '@mui/icons-material/Delete';
 
-const rows = [];
 
-function VehicleRegisteredTables() {
+function VehicleRegisteredTables({setStatus, setId, setOpen, reload, setReload}) {
+
+  const [rows, setRows] = useState([]);
+
+
+  useEffect(()=>{
+    if(reload) {
+      getAllVehicles().then(vehicles =>{
+        const _rows = vehicles.map(vh=>{
+          return {
+            id:vh.id,
+            name : vh.name,
+            type: vh.type,
+            seats: vh.seats,
+            price: vh.price,
+            numberPlate: vh.numberPlate,
+            branch:vh.branch,
+          }
+        })
+        setRows(_rows);
+    });
+    setReload(false);
+    }
+  },[reload])
+  const getAllVehicles = async () =>{
+    const resp = await axios.get("http://localhost:3001/vehicles");
+    if(resp.status == 200) {
+      return await resp.data;
+    }
+  }
+
+  const editVehicle = (e, id) =>{
+    setId(id);
+    setStatus("edit");
+    setOpen(true);
+  }
+
+  const deleteVehicle = (e, id) =>{
+    setId(id);
+    setStatus("delete");
+    setOpen(true);
+  }
+
   return (
     // vehicle table
     <div className="VehicleRegisteredTables__Container">
-      <h3>Branches</h3>
+      <h3>Vehicles</h3>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>VehicleName</TableCell>
-              <TableCell align="right">VehicleType</TableCell>
-              <TableCell align="right">VehicleNumberPlate</TableCell>
-              <TableCell align="right">Price</TableCell>
-              <TableCell align="right">Status</TableCell>
-              <TableCell align="right">Edit</TableCell>
-              <TableCell align="right">Delete</TableCell>
+              <TableCell align="center">Name</TableCell>
+              <TableCell align="center">Type</TableCell>
+              <TableCell align="center">Seats</TableCell>
+              <TableCell align="center">Branch</TableCell>
+              <TableCell align="center">Price</TableCell>
+              <TableCell align="center">Number Plate</TableCell>
+              <TableCell align="center">Edit</TableCell>
+              <TableCell align="center">Delete</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row) => (
               <TableRow
-                key={row.name}
+                key={row.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.pickupLocation}</TableCell>
-                <TableCell align="right">{row.dropLocation}</TableCell>
-                <TableCell align="right">{row.kilometers}</TableCell>
-                <TableCell align="right">{row.price}</TableCell>
+                <TableCell align="center">{row.type}</TableCell>
+                <TableCell align="center">{row.seats}</TableCell>
+                <TableCell align="center">{row.branch}</TableCell>
+                <TableCell align="center">{row.price}</TableCell>
+                <TableCell align="center">{row.numberPlate}</TableCell>
+                <TableCell align="center">
+                  <IconButton onClick={e=>{editVehicle(e, row.id)}}>
+                    <CreateIcon/>
+                  </IconButton>
+                </TableCell>
+                <TableCell align="center">
+                <IconButton onClick={e=>{deleteVehicle(e, row.id)}}>
+                    <DeleteIcon/>
+                  </IconButton>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
