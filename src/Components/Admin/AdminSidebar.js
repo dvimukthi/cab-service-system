@@ -4,12 +4,10 @@ import AdminImg from "../../Assets/admin.png";
 import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 import { List, ListItem, ListItemText } from "@mui/material";
 // import { Link } from "react-router-dom";
-import Link from '@mui/material/Link';
+import Link from "@mui/material/Link";
 import { useNavigate } from "react-router";
 
-
 function AdminSidebar() {
-
   const navigate = useNavigate();
   function logOut() {
     navigate("/signin");
@@ -38,22 +36,22 @@ function AdminSidebar() {
       {/* sidebar contents */}
       <div className="SidebarItems__Container">
         <List>
-          <Link href='/driverlist' underline="none" color="inherit">
+          <Link href="/driverlist" underline="none" color="inherit">
             <ListItem button key={"Driver List"}>
               <ListItemText primary={"Driver List"} />
             </ListItem>
           </Link>
-          <Link href='/addvehicles' underline="none" color="inherit">
+          <Link href="/addvehicles" underline="none" color="inherit">
             <ListItem button key={"Add Vehicles"}>
               <ListItemText primary={"Add Vehicles"} />
             </ListItem>
           </Link>
-          <Link href='/addvehiclecategories' underline="none" color="inherit">
+          <Link href="/addvehiclecategories" underline="none" color="inherit">
             <ListItem button key={"Add Vehicle Category"}>
               <ListItemText primary={"Add Vehicle Category"} />
             </ListItem>
           </Link>
-          <Link href='/branches' underline="none" color="inherit">
+          <Link href="/branches" underline="none" color="inherit">
             <ListItem button key={"Branches"}>
               <ListItemText primary={"Branches"} />
             </ListItem>
