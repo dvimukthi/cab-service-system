@@ -11,6 +11,10 @@ function CustomerHeader() {
   const loadHome = () => {
     navigate("/");
   };
+  // navigate to sign in page
+  function logOut() {
+    navigate("/signin");
+  }
 
   return (
     // Add GoCheeta Logo
@@ -32,7 +36,7 @@ function CustomerHeader() {
         <img
           src={UserProfile}
           alt=""
-          //   onClick={}
+          onClick={logOut}
           width="50"
           height="50"
           style={{
