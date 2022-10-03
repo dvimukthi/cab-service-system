@@ -4,64 +4,61 @@ import BookingVehicles from "./BookingVehicles";
 import DropdownBranches from "./DropdownBranches";
 import PlaceBooking from "./PlaceBooking";
 import BOOKINGPAGEIMG from "../../../Assets/BookingImg/bookingpage.png";
-import axios from "axios";
+import axios from 'axios';
 import { useNavigate } from "react-router";
-import CustomerProfile from "../../CustomerProfile";
 
 let initialVals = {
-  pickup_street: "",
-  pickup_city: "",
-  branch: "",
-  drop_street: "",
-  drop_city: "",
-  distance: "",
-  mini: false,
-  car: false,
-  van: false,
-  customer_id: 1,
+  pickup_street:'',
+  pickup_city:'',
+  branch:'',
+  drop_street:'',
+  drop_city:'',
+  distance:'',
+  mini:false,
+  car:false,
+  van:false,
+  customer_id:1,
 };
 
-function BookingBody() {
-  const navigate = useNavigate();
-  const loadCustomerProfile = () => {
-    navigate("/customerprofile");
-  };
-
+function BookingBody({customer_id}) {
   const [selected, setSelected] = useState("");
   const [values, setValues] = useState(initialVals);
 
-  function handleChange(e, targetName = null, targetVal = null) {
+
+  const navigate = useNavigate();
+
+  function handleChange(e, targetName=null, targetVal=null) {
     var name = e.target.name;
     var val = e.target.value;
-    if (targetName == "branch") {
+    if(targetName=='branch') {
       val = targetVal;
       name = targetName;
-    } else if (targetName && targetVal) {
+    } else if(targetName && targetVal) {
       val = e.target.checked;
       name = targetName;
-    }
+    } 
     setValues({
       ...values,
-      [name]: val,
-    });
-    console.log(values);
+      [name]:val
+   });
+   console.log(values);
   }
 
-  async function placeBooking() {
-    var res = await axios.post("http://localhost:3001/trip", values);
-    console.log(res);
-    if (res.status == 201) {
-      alert("Trip Saved successfully with trip id " + res.data.id + " !");
-    }
+  async function placeBooking () {
+    var res = await axios.post(
+        'http://localhost:3001/trip',
+        values,
+        );
+      console.log(res);
+      if(res.status == 201) {
+        alert("Trip Saved successfully with trip id "+res.data.trip_id.id+" !");
+        navigate(`/customerprofile?cid=${res.data.trip_id.customerId}&bid=${res.data.trip_id.id}`)
+      }
   }
   return (
     <div className="bookingBody__container">
       <div className="boookingparttwo__container">
-        {/* your profile button */}
-        <div className="YourProfile__btn" onClick={loadCustomerProfile}>
-          Your Profile
-        </div>
-        ;{/* from */}
+        {/* from */}
         <form>
           <h1>Plan Your Trip</h1>
           <div className="Trip__container">
@@ -95,11 +92,7 @@ function BookingBody() {
             </div>
             <label>Select your nearest branch</label>
             {/* dropdown branches box */}
-            <DropdownBranches
-              handleChange={handleChange}
-              selected={selected}
-              setSelected={setSelected}
-            />
+            <DropdownBranches handleChange={handleChange} selected={selected} setSelected={setSelected} />
             <div className="BookingField">
               <label>Drop Location</label>
               <input
@@ -149,9 +142,11 @@ function BookingBody() {
           </div>
         </form>
         {/* booking vehicles part */}
-        <BookingVehicles handleChange={handleChange} />
+        <BookingVehicles
+        handleChange={handleChange} />
         {/* place booking part */}
-        <PlaceBooking placeBooking={placeBooking} />
+        <PlaceBooking 
+          placeBooking={placeBooking}/>
       </div>
       {/* booking img */}
       <img
