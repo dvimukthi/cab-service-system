@@ -1,10 +1,11 @@
 import React from "react";
 import "./Branches.css";
+import BranchRegister from "./BranchRegister";
 
 function Branches() {
   return (
     <div>
-      <h1>Branches list</h1>
+      <BranchRegister />
     </div>
   );
 }

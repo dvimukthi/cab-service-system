@@ -10,60 +10,62 @@ import Paper from "@mui/material/Paper";
 
 import axios from "axios";
 import { IconButton } from "@mui/material";
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteIcon from '@mui/icons-material/Delete';
+import CreateIcon from "@mui/icons-material/Create";
+import DeleteIcon from "@mui/icons-material/Delete";
 
-
-
-function BranchRegisteredTables({setStatus, setId, setOpen, reload, setReload}) {
-  
+function BranchRegisteredTables({
+  setStatus,
+  setId,
+  setOpen,
+  reload,
+  setReload,
+}) {
   const [rows, setRows] = useState([]);
 
-
-  useEffect(()=>{
-    if(reload) {
-      getAllBranchs().then(Branchs =>{
-        const _rows = Branchs.map(b=>{
+  useEffect(() => {
+    if (reload) {
+      getAllBranchs().then((Branchs) => {
+        const _rows = Branchs.map((b) => {
           return {
-            id:b.id,
-            location : b.location,
-            address : b.address,
+            id: b.id,
+            location: b.location,
+            address: b.address,
             email: b.email,
             phoneNumber: b.phone,
             numberofVehicle: b.vehicleCount,
             numberOfDrivers: b.driversCount,
-          }
-        })
+          };
+        });
         setRows(_rows);
-    });
-    setReload(false);
+      });
+      setReload(false);
     }
-  },[reload])
-  const getAllBranchs = async () =>{
+  }, [reload]);
+  const getAllBranchs = async () => {
     const resp = await axios.get("http://localhost:3001/branch");
-    if(resp.status == 200) {
+    if (resp.status == 200) {
       return await resp.data;
     }
-  }
+  };
 
-  const editBranch = (e, id) =>{
+  const editBranch = (e, id) => {
     setId(id);
     setStatus("edit");
     setOpen(true);
-  }
+  };
 
-  const deleteBranch = (e, id) =>{
+  const deleteBranch = (e, id) => {
     setId(id);
     setStatus("delete");
     setOpen(true);
-  }
+  };
 
   return (
     // Branch table
     <div className="BranchRegisteredTables__Container">
-      <h3>Branchs</h3>
+      <h3>Branches</h3>
       <TableContainer component={Paper}>
-        <Table  aria-label="simple table">
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell align="center">Location</TableCell>
@@ -89,13 +91,21 @@ function BranchRegisteredTables({setStatus, setId, setOpen, reload, setReload}) 
                 <TableCell align="center">{row.numberOfDrivers}</TableCell>
                 <TableCell align="center">{row.numberofVehicle}</TableCell>
                 <TableCell align="center">
-                  <IconButton onClick={e=>{editBranch(e, row.id)}}>
-                    <CreateIcon/>
+                  <IconButton
+                    onClick={(e) => {
+                      editBranch(e, row.id);
+                    }}
+                  >
+                    <CreateIcon />
                   </IconButton>
                 </TableCell>
                 <TableCell align="right">
-                <IconButton onClick={e=>{deleteBranch(e, row.id)}}>
-                    <DeleteIcon/>
+                  <IconButton
+                    onClick={(e) => {
+                      deleteBranch(e, row.id);
+                    }}
+                  >
+                    <DeleteIcon />
                   </IconButton>
                 </TableCell>
               </TableRow>
