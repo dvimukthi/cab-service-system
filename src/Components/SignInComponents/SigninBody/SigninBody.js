@@ -12,7 +12,7 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router";
-import axios from 'axios';
+import axios from "axios";
 
 export default function SigninBody() {
   const navigate = useNavigate();
@@ -28,29 +28,24 @@ export default function SigninBody() {
       email: data.get("email"),
       password: data.get("password"),
     });
-    axios.post("http://localhost:3001/signin",
-      data,
-      {
-          'Content-Type':  'multipart/form-data;',
-      }).then(function (response) {
+    axios
+      .post("http://localhost:3001/signin", data, {
+        "Content-Type": "multipart/form-data;",
+      })
+      .then(function (response) {
         //handle success
-        if(response.status == 200){
+        if (response.status == 200) {
           console.log(response.data);
           var data = response.data;
-          if(data.type == 'CUSTOMER')
-            navigate("/book")
-          else if (data.type == 'DRIVER')
-            navigate(`/driver/${data.userId}`)
-          else if (data.type == 'ADMIN')
-            navigate("/admin")
-
+          if (data.type == "CUSTOMER") navigate(`/book?cid=${data.userId}`);
+          else if (data.type == "DRIVER") navigate(`/driver/${data.userId}`);
+          else if (data.type == "ADMIN") navigate("/admin");
         }
       })
       .catch(function (response) {
         //handle error
         console.log(response);
       });
-
   };
 
   return (

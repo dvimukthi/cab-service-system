@@ -31,7 +31,11 @@ function App() {
         <Route path="/customerprofile" exact element={<CustomerProfile />} />
         <Route path="/driver/:id" element={<Driver />} />
         <Route path="/driverlist" element={<Admin widget="driverlist" />} />
-        <Route path="/addvehicles" element={<Admin widget="addvehicles" />} />
+        {/* <Route path="/tripdetails" element={<Trip} /> */}
+        <Route
+          path="/addvehicles"
+          element={<Admin widget="addvehicles" />}
+        />{" "}
         <Route
           path="/addvehiclecategories"
           element={<Admin widget="addvehiclecategories" />}
