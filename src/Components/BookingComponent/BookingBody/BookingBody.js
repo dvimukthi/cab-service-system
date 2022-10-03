@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../BookingBody/BookingBody.css";
 import BookingVehicles from "./BookingVehicles";
 import DropdownBranches from "./DropdownBranches";
@@ -20,11 +20,18 @@ let initialVals = {
   customer_id:1,
 };
 
-function BookingBody({customer_id}) {
+function BookingBody({ customerId }) {
   const [selected, setSelected] = useState("");
   const [values, setValues] = useState(initialVals);
 
 
+  useEffect(()=>{
+    var name = 'customer_id';
+    setValues({
+      ...values,
+      [name]: customerId
+    })
+  },[customerId])
   const navigate = useNavigate();
 
   function handleChange(e, targetName=null, targetVal=null) {
@@ -109,7 +116,7 @@ function BookingBody({customer_id}) {
               />
               <input
                 type="text"
-                name="city"
+                name="drop_city"
                 placeholder="drop_city"
                 onChange={handleChange}
                 style={{

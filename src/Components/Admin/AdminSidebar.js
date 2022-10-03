@@ -46,11 +46,11 @@ function AdminSidebar() {
               <ListItemText primary={"Add Vehicles"} />
             </ListItem>
           </Link>
-          <Link href="/addvehiclecategories" underline="none" color="inherit">
+          {/* <Link href="/addvehiclecategories" underline="none" color="inherit">
             <ListItem button key={"Add Vehicle Category"}>
               <ListItemText primary={"Add Vehicle Category"} />
             </ListItem>
-          </Link>
+          </Link> */}
           <Link href="/branches" underline="none" color="inherit">
             <ListItem button key={"Branches"}>
               <ListItemText primary={"Branches"} />

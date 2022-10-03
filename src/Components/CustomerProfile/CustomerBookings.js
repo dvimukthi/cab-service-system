@@ -71,7 +71,7 @@ export default function BasicTable({customerId}) {
                 <TableCell align="right">{row.dropStreet} , {row.dropCity}</TableCell>
                 <TableCell align="right">{row.distance}</TableCell>
                 <TableCell align="right">{row.branch}</TableCell>
-                <TableCell align="right">{row.driver.firstName} {row.driver.lastName}</TableCell>
+                <TableCell align="right">{row.driver? row.driver.firstName: ""} {row.driver? row.driver.lastName : ""}</TableCell>
                 <TableCell align="right">{row.vehicle.type}</TableCell>
                 <TableCell align="right">{row.vehicle.name}</TableCell>
                 <TableCell align="right">{row.vehicle.numberPlate}</TableCell>
