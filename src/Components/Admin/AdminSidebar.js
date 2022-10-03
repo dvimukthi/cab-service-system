@@ -5,8 +5,16 @@ import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 import { List, ListItem, ListItemText } from "@mui/material";
 // import { Link } from "react-router-dom";
 import Link from '@mui/material/Link';
+import { useNavigate } from "react-router";
+
 
 function AdminSidebar() {
+
+  const navigate = useNavigate();
+  function logOut() {
+    navigate("/signin");
+  }
+
   return (
     <div className="Sidebar__Container">
       <h2>GoCheeta</h2>
@@ -54,7 +62,7 @@ function AdminSidebar() {
       </div>
 
       {/* log out button */}
-      <div className="LogOutBtn">
+      <div className="LogOutBtn" onClick={logOut}>
         <ExitToAppRoundedIcon />
         Log Out
       </div>
